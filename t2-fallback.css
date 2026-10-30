@@ -1,0 +1,24 @@
+.t2-fb body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Inter,Roboto,sans-serif;color:#1a1a1a;background:#fff}
+.t2-fb img{max-width:100%;height:auto}
+.t2-fb .navbar{padding:12px clamp(20px,5vw,64px);background:var(--t2-paper,#fbf8ef);border-bottom:1px solid rgba(0,0,0,.08)}
+.t2-fb .navbar .nav-container{display:flex;align-items:center;justify-content:space-between;max-width:none}
+.t2-fb .navbar .brand-logo{height:56px;width:auto;max-width:none}
+.t2-fb .navbar .nav-link{font-weight:600;color:var(--t2-navy,#003566)}
+.t2-fb .t2-hero,.t2-fb .t2-phero,.t2-fb .t2-sec{padding:clamp(56px,8vw,104px) clamp(20px,5vw,64px)}
+.t2-fb .t2-hero{padding-top:clamp(104px,12vw,140px);background:var(--t2-paper,#fbf8ef)}
+.t2-fb .t2-wrap,.t2-fb .t2-hero-in,.t2-fb .t2-phero-in{max-width:1240px;margin:0 auto}
+.t2-fb .t2-hero-in,.t2-fb .t2-phero-in,.t2-fb .t2-split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);align-items:center}
+.t2-fb .t2-h1,.t2-fb .t2-h2{margin:0 0 16px;font-family:var(--t2-disp,inherit);font-weight:var(--t2-disp-w,600);line-height:1.05;color:var(--t2-navy,#003566)}
+.t2-fb .t2-h1{font-size:clamp(44px,6vw,88px)}
+.t2-fb .t2-h2{font-size:clamp(32px,4vw,52px)}
+.t2-fb .t2-lead{max-width:54ch;font-size:18px;line-height:1.6;color:#595959}
+.t2-fb .t2-btn,.t2-fb .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;background:var(--t2-navy,#003566);color:#fff;font-weight:600;text-decoration:none}
+.t2-fb .t2-plan-grid,.t2-fb .t2-amen-list,.t2-fb .t2-acards,.t2-fb .t2-feat,.t2-fb .t2-band-list,.t2-fb .t2-gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.t2-fb .t2-plan-img,.t2-fb .t2-gal-img,.t2-fb .t2-phero-img,.t2-fb .t2-fcard-img{display:block;width:100%;height:100%;object-fit:cover}
+.t2-fb .t2-plan-img{object-fit:contain}
+.t2-fb .gallery-quick-stack{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.t2-fb .gallery-quick-stack img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.t2-fb .form-field{width:100%;height:52px;padding:0 16px;border:1.5px solid #dcd6ca;border-radius:8px;font:inherit}
+.t2-fb .t2-avail iframe{display:block;width:100%;height:clamp(620px,80vh,940px);border:0}
+@media (max-width:991px){.t2-fb .t2-hero-in,.t2-fb .t2-phero-in,.t2-fb .t2-split{grid-template-columns:1fr}}
+@media (max-width:767px){.t2-fb .navbar .brand-logo{height:44px}.t2-fb .gallery-quick-stack{grid-template-columns:repeat(2,minmax(0,1fr))}}
