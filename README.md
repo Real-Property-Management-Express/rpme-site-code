@@ -50,7 +50,6 @@ Put `data-t2v` on a section to switch its layout:
 | `stack` | Any split section, FAQs | Centered heading above the content |
 | `showcase` | Amenities | Photo mosaic (`.t2-amosaic`) beside the list |
 | `spotlight` | Featured amenity cards | Large alternating photo and text rows, numbered |
-| `grid` | Gallery | Even 3:2 photo grid instead of the mixed-size layout |
 
 ## Releases
 
