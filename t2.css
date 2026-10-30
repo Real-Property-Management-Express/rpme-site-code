@@ -168,6 +168,7 @@ a.form-contact-link-block:hover .label::after,a.form-contact-link-block:focus-vi
 .footer{background:var(--t2-navy-dk)!important;color:rgba(255,255,255,.82)!important;padding:clamp(56px,7vw,88px) var(--t2-pad) 28px!important;font-family:var(--t2-sans)}
 .footer .footer-container{max-width:var(--t2-max);margin:0 auto}
 .footer .brand-logo{filter:brightness(0) invert(1);max-height:58px!important;width:auto}
+.footer .brand-logo[src*="placeholder"],.form-contact-info-div .brand-logo[src*="placeholder"]{filter:none}
 .footer a,.footer .text-link,.footer .text-block{color:rgba(255,255,255,.82)!important;text-decoration:none!important;font-family:var(--t2-sans)!important;transition:color .2s}
 .footer a:hover,.footer a:hover .text-block{color:var(--t2-acc-lt)!important}
 .footer .footer-div-right a{font-weight:500}
