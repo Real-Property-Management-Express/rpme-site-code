@@ -425,20 +425,23 @@ textarea.form-field{display:block;width:100%;height:108px!important;min-height:1
 .t2-mbx-dir{position:absolute;left:14px;top:14px;z-index:2;display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 16px;border-radius:var(--t2-pill,999px);background:#fff;color:var(--t2-navy,#003566)!important;font:600 15px/1 var(--t2-sans,system-ui,sans-serif);text-decoration:none!important;box-shadow:var(--t2-shc,0 6px 18px rgba(var(--t2-shd-rgb,0,30,60),.2));transition:background-color .2s,color .2s}.t2-mbx-dir svg{width:16px;height:16px}.t2-mbx-dir:hover{background:var(--t2-acc-dk,#a35a33);color:#fff!important}.t2-mbx-dir:focus-visible{outline:2px solid var(--t2-navy,#003566);outline-offset:3px}
 @media (max-width:767px){.t2-mk-lbl{font-size:13px;padding:6px 10px}.t2-mbx-dir{height:38px;padding:0 14px;font-size:14px}}
 .t2-fees{background:var(--t2-paper)}
-.t2-fees-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px);align-items:start}
+.t2-fees-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,24px);align-items:start}
 .t2-fee-card{padding:clamp(20px,2.4vw,28px);border-radius:var(--t2-r);background:#fff;box-shadow:var(--t2-shc)}
 .t2-fee-h{margin:0 0 6px;font:var(--t2-disp-w) clamp(20px,1.7vw,24px)/1.2 var(--t2-disp);color:var(--t2-navy);text-transform:none}
 .t2-fee-list{margin:0;padding:0;list-style:none}
 .t2-fee+.t2-fee{border-top:1px solid var(--t2-line)}
 .t2-fee-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;width:100%;margin:0;padding:14px 0;border:0;background:none;font:400 16px/1.4 var(--t2-sans);color:var(--t2-ink);text-align:left}
-button.t2-fee-row{cursor:pointer}
-button.t2-fee-row::after{content:"+";flex:none;width:18px;font-weight:600;color:var(--t2-acc-dk);text-align:center;transition:transform .2s}
+button.t2-fee-row{width:calc(100% + 24px);margin:2px -12px;padding:12px;border-radius:var(--t2-r3);cursor:pointer;transition:background-color .2s}
+button.t2-fee-row::after{content:"+";flex:none;width:18px;font-weight:600;color:var(--t2-acc-dk);text-align:center;transition:transform .25s var(--t2-ease)}
 button.t2-fee-row[aria-expanded=true]::after{transform:rotate(45deg)}
-button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:2px;border-radius:4px}
+@media (hover:hover){button.t2-fee-row:hover{background:rgba(var(--t2-acc-rgb),.1)}button.t2-fee-row:hover::after{transform:scale(1.2)}button.t2-fee-row[aria-expanded=true]:hover::after{transform:rotate(45deg) scale(1.2)}}
+button.t2-fee-row:focus{outline:none}
+button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:-2px}
 .t2-fee-n{flex:1}
+.t2-fee-tag{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:var(--t2-pill);background:var(--t2-paper-dk);color:var(--t2-mut);font-size:13px;font-weight:600;vertical-align:1px}
 .t2-fee-v{font-weight:600;color:var(--t2-navy);text-align:right}
 .t2-fee-v a{color:var(--t2-acc-dk);text-decoration:underline;text-underline-offset:3px}
-.t2-fee-d{margin:-6px 0 14px;font-size:15px;line-height:1.55;color:var(--t2-mut)}
+.t2-fee-d{margin:0 0 14px;font-size:15px;line-height:1.55;color:var(--t2-mut)}
 .t2-fees-note{margin:20px 0 0;font-size:15px;color:var(--t2-mut)}
 @media (max-width:991px){.t2-fees-grid{grid-template-columns:1fr}}
-@media (prefers-reduced-motion:reduce){button.t2-fee-row::after{transition:none}}
+@media (prefers-reduced-motion:reduce){button.t2-fee-row,button.t2-fee-row::after{transition:none}}

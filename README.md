@@ -37,7 +37,7 @@ window.T2PROMO={text:'',terms:'',start:'',end:''};
 - `T2S`: required `pri`, `acc`, `paper`, `font`. Optional `priDk`, `accLt`, `accDk`, `paperDk`, `field`, `shd` (derived when left out), `fontUrl`, `w`, `preset` (`modern` or `classic`) and `vars` (any `--t2-*` variable, applied after the preset).
 - `T2`: `Noun`, `path` (Apartments page), `domain` (no www), `map` (empty `addr` = no branded map; `hide` = names the map never labels).
 - `T2PROMO`: empty `text` = no banner; `start`/`end` are `YYYY-MM-DD`, inclusive.
-- `T2.fees` (optional): the "What You'll Pay" section under Available Apartments uses the standard fees in `t2.js`. A site can change any row by key (`rent`, `rbp`, `ltl`, `utilities`, `petRent`, `appFee`, `holding`, `docSetup`, `petFee`): a string replaces the amount, `false` hides the row, and `<key>Desc` replaces its description. `optional:[{name,value,desc}]` adds rows to "Only if you choose"; `asOf` sets the footnote date.
+- `T2.fees` (optional): the "What You'll Pay" section under Available Apartments uses the standard fees in `t2.js`. A site can change any row by key (`rent`, `rbp`, `ltl`, `utilities`, `petRent`, `parking`, `garage`, `storage`, `appFee`, `holding`, `docSetup`, `service`, `petFee`): a string sets the amount, `false` hides the row, `<key>Name` renames it and `<key>Desc` replaces its description. `parking`, `garage` and `storage` only show when set. `utilities` takes the method (Included, Paid to provider, Flat rate, RUBS, Lifestyle fee) and picks the matching description. `optional:[{name,value,desc}]` adds optional monthly rows; `asOf` sets the footnote date.
 
 ## Layout variants
 
