@@ -450,3 +450,4 @@ button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:
 .t2-fpop .t2-fpop-box{width:min(1000px,100%);height:auto;max-height:100%}
 .t2-fpop-body{overflow-y:auto;padding:clamp(18px,3vw,32px);background:var(--t2-paper);font-family:var(--t2-sans)}
 .t2-fpop-body>.t2-lead{margin:0 0 20px}
+#or3d .t2-fees-xp{margin-top:-4px}
