@@ -445,3 +445,5 @@ button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:
 .t2-fees-note{margin:20px 0 0;font-size:15px;color:var(--t2-mut)}
 @media (max-width:991px){.t2-fees-grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){button.t2-fee-row,button.t2-fee-row::after{transition:none}}
+.t2-faq-link{color:var(--t2-acc-dk);font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.t2-faq-link:hover{color:var(--t2-navy)}
