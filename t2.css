@@ -259,7 +259,7 @@ a.form-contact-link-block:hover .label::after,a.form-contact-link-block:focus-vi
 @media (max-width:767px){.footer .rpme-logo{width:130px}}
 .other-hero-section,.thank-you-section{background:var(--t2-paper)!important;padding:clamp(128px,14vw,176px) var(--t2-pad) clamp(56px,7vw,88px);font-family:var(--t2-sans)}
 .other-hero-section>.center-flex{width:100%;max-width:var(--t2-max);margin:0 auto;padding:0;align-items:flex-start;text-align:left}
-.other-hero-section .hero-heading,.thank-you-section .hero-heading{margin:0 0 18px;font-family:var(--t2-disp);font-weight:var(--t2-disp-w);font-size:calc(clamp(48px,6.4vw,92px)*var(--t2-dk,1));line-height:.95;letter-spacing:calc(-.015em*var(--t2-tk));color:var(--t2-navy);text-align:inherit}
+.other-hero-section .hero-heading,.thank-you-section .hero-heading{margin:0 0 18px;font-family:var(--t2-disp);font-weight:var(--t2-disp-w);font-size:calc(clamp(52px,6.2vw,96px)*var(--t2-dk,1));line-height:.95;letter-spacing:calc(-.015em*var(--t2-tk));color:var(--t2-navy);text-align:inherit}
 .other-hero-section .hero-subheading,.other-hero-section .section-subheading,.thank-you-section .section-subheading{max-width:60ch;margin:0;font:400 clamp(17px,1.4vw,20px)/1.6 var(--t2-sans);color:var(--t2-mut);text-align:inherit}
 .other-hero-section .form-div{margin-top:clamp(36px,4vw,56px)!important}
 .thank-you-section{flex-flow:column;justify-content:center;height:100vh;min-height:72vh;display:flex;align-items:center}
