@@ -90,17 +90,18 @@ Each site's `window.T2S` (in its T2Settings script) picks a starting preset, the
 | `layout.cta` | `split` (default), `band`, `minimal`, `overlay` | Closing call to action: color card with photo, full-width color band, simple lined row, or text over the photo |
 | `layout.strip` | `dark` (default), `light` | "Included with your rent" strip under the hero |
 | `layout.divider` | `none` (default), `line` | Thin line between sections |
+| `words.plans` | `short` (1 Bed), `medium` (1 Bedroom), `long` (One Bedroom) | Floor plan card names and their "See … Plans" buttons. Bath counts are added only when two plans share a bedroom count. Names that don't read like a bedroom count are left alone. |
 | `layout.order` | list, for example `['amenities','plans']` | Home section order: any of `plans`, `amenities`, `neighborhood`, `faqs`, `reviews`, `gallery`; listed sections move, in that order, to where the first of them was |
 
 Each preset (except modern) also picks section layouts, so two sites on different presets differ throughout the site, not just in the hero. Any `layout` setting overrides the preset's pick, and settings override `data-t2v` attributes set in Webflow.
 
 | Preset | Layouts it picks |
 |---|---|
-| modern | none (uses the page's own variants) |
-| classic | plans rows, amenities checklist, features cards, nearby panel, FAQs stack, reviews dark, CTA band, divider line |
-| editorial | hero full, gallery grid, plans rows, amenities showcase, features spotlight, nearby panel, FAQs inline, reviews quote, CTA minimal, strip light, divider line |
-| warm | hero centered, plans cards, amenities showcase, features cards, nearby plain, FAQs stack, reviews light, CTA overlay |
-| bold | hero full, plans cards, amenities checklist, features spotlight, nearby plain, FAQs inline, reviews dark, CTA band |
+| modern | none (uses the page's own variants and wording) |
+| classic | plan names long, plans rows, amenities checklist, features cards, nearby panel, FAQs stack, reviews dark, CTA band, divider line |
+| editorial | plan names long, hero full, gallery grid, plans rows, amenities showcase, features spotlight, nearby panel, FAQs inline, reviews quote, CTA minimal, strip light, divider line |
+| warm | plan names medium, hero centered, plans cards, amenities showcase, features cards, nearby plain, FAQs stack, reviews light, CTA overlay |
+| bold | plan names short, hero full, plans cards, amenities checklist, features spotlight, nearby plain, FAQs inline, reviews dark, CTA band |
 
 Presets: **modern** is soft and rounded with glass effects; **classic** is crisp with small radii and caps buttons; **editorial** is square, airy, outlined cards, white sections, larger tighter headings, calm motion; **warm** is extra rounded with soft lifted cards; **bold** is medium radii, caps buttons, larger tighter headings, deeper section tint, compact spacing.
 
@@ -108,7 +109,7 @@ Example: `window.T2S={pri:'#2f4a3a',acc:'#c9a46a',paper:'#f6f2ea',font:'...',pre
 
 Map colors (land, water, parks, buildings, labels) come from the site's paper and primary colors. `T2.map.colors` can override any of them. `T2.map.icon` (optional) = the URL of the property's icon shows inside the property pin on every map. Use the brand library's `CODE_Icon_White.png` (light icon on the dark pin), uploaded to the site's Assets.
 
-**Preview on staging:** on a webflow.io address, add query settings to any page URL to try a vibe without changing the site, for example `?vibe=editorial&hero=full&gallery=grid&cards=outlined`. Works for `vibe`, every dial above, `headings` (number), every layout (`?reviews=quote&cta=overlay`) and `order` (`?order=amenities,plans`). With `vibe` in the URL the site's own layout settings are ignored, so the preview shows the preset as a new site would get it.
+**Preview on staging:** on a webflow.io address, add query settings to any page URL to try a vibe without changing the site, for example `?vibe=editorial&hero=full&gallery=grid&cards=outlined`. Works for `vibe`, every dial above, `headings` (number), every layout (`?reviews=quote&cta=overlay`), plan wording (`?words=long`) and `order` (`?order=amenities,plans`). With `vibe` in the URL the site's own layout settings are ignored, so the preview shows the preset as a new site would get it.
 
 ## Layout variants
 
