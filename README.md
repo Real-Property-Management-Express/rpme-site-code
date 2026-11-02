@@ -85,7 +85,7 @@ Each site's `window.T2S` (in its T2Settings script) picks a starting preset, the
 | `layout.amenities` | `split` (default), `checklist`, `showcase`, `stack` | Home amenities: list beside the heading, card list, photo mosaic (falls back to `checklist` without photos), or centered |
 | `layout.features` | `cards` (default), `spotlight` | Amenities page featured cards: grid or large alternating rows |
 | `layout.nearby` | `plain` (default), `panel` | Home neighborhood teaser: full-color band or light panel |
-| `layout.faqs` | `split` (default), `stack` | Home FAQ teaser: beside or centered |
+| `layout.faqs` | `split` (default), `stack`, `inline` | Home FAQ teaser: heading beside the topics, centered, or heading left with text and button right |
 | `layout.reviews` | `dark` (default), `light`, `quote` | Reviews: dark banner, light banner with cards, or one large quote |
 | `layout.cta` | `split` (default), `band`, `minimal`, `overlay` | Closing call to action: color card with photo, full-width color band, simple lined row, or text over the photo |
 | `layout.strip` | `dark` (default), `light` | "Included with your rent" strip under the hero |
@@ -97,10 +97,10 @@ Each preset (except modern) also picks section layouts, so two sites on differen
 | Preset | Layouts it picks |
 |---|---|
 | modern | none (uses the page's own variants) |
-| classic | plans rows, amenities checklist, features cards, nearby panel, FAQs stack, reviews light, CTA band, divider line |
-| editorial | hero full, gallery grid, plans rows, amenities showcase, features spotlight, nearby panel, FAQs split, reviews quote, CTA minimal, strip light, divider line |
+| classic | plans rows, amenities checklist, features cards, nearby panel, FAQs stack, reviews dark, CTA band, divider line |
+| editorial | hero full, gallery grid, plans rows, amenities showcase, features spotlight, nearby panel, FAQs inline, reviews quote, CTA minimal, strip light, divider line |
 | warm | hero centered, plans cards, amenities showcase, features cards, nearby plain, FAQs stack, reviews light, CTA overlay |
-| bold | hero full, plans cards, amenities checklist, features spotlight, nearby plain, FAQs split, reviews dark, CTA band |
+| bold | hero full, plans cards, amenities checklist, features spotlight, nearby plain, FAQs inline, reviews dark, CTA band |
 
 Presets: **modern** is soft and rounded with glass effects; **classic** is crisp with small radii and caps buttons; **editorial** is square, airy, outlined cards, white sections, larger tighter headings, calm motion; **warm** is extra rounded with soft lifted cards; **bold** is medium radii, caps buttons, larger tighter headings, deeper section tint, compact spacing.
 

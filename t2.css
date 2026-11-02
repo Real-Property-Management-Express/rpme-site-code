@@ -830,3 +830,12 @@ html[data-t2-divider=line] .t2-sec+.t2-sec:not(.t2-reviews):not(.t2-hood){border
 .t2-incl[data-t2v=light] .t2-incl-i{color:var(--t2-ink)}
 .t2-incl[data-t2v=light] .t2-incl-i svg{color:var(--t2-acc-dk)}
 @media (max-width:767px){.t2-ctap-sec[data-t2v=minimal] .t2-ctap-copy{grid-template-columns:minmax(0,1fr)}.t2-ctap-sec[data-t2v=minimal] .t2-actions{grid-column:1;grid-row:auto;margin-top:16px}.t2-ctap-sec[data-t2v=overlay] .t2-ctap::after{background:rgba(var(--t2-shd-rgb),.7)}}
+.t2-amenities:not([data-t2v=showcase]) .t2-amosaic{grid-area:auto;grid-column:1/-1;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.t2-amenities:not([data-t2v=showcase]) .t2-amosaic-i:first-child{grid-column:auto;aspect-ratio:4/3}
+.t2-faqs[data-t2v=inline]:not(:has(.t2-topics)){padding-top:clamp(48px,6vw,80px);padding-bottom:clamp(48px,6vw,80px)}
+.t2-faqs[data-t2v=inline] .t2-split{grid-template-columns:minmax(0,1fr)}
+.t2-faqs[data-t2v=inline] .t2-split-copy{position:static;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:center;gap:20px clamp(40px,6vw,96px)}
+.t2-faqs[data-t2v=inline] .t2-h2{grid-row:1/span 2;margin:0}
+.t2-faqs[data-t2v=inline] .t2-lead{grid-column:2;margin:0}
+.t2-faqs[data-t2v=inline] .t2-split-copy .t2-btn{grid-column:2;justify-self:start;margin:0}
+@media (max-width:767px){.t2-faqs[data-t2v=inline] .t2-split-copy{grid-template-columns:minmax(0,1fr)}.t2-faqs[data-t2v=inline] :is(.t2-h2,.t2-lead,.t2-split-copy .t2-btn){grid-column:1;grid-row:auto}}
