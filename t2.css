@@ -766,7 +766,7 @@ html[data-t2-motion=none] *,html[data-t2-motion=none] *::before,html[data-t2-mot
 html.t2-js[data-t2-motion=none] .t2-hero :is(.t2-loc,.t2-h1,.t2-tag,.t2-lead,.t2-actions,.t2-facts){opacity:1;transform:none}
 html.t2-js[data-t2-motion=calm] .t2-hero :is(.t2-loc,.t2-h1,.t2-tag,.t2-lead,.t2-actions,.t2-facts){transform:none}
 html[data-t2-hero=full] .t2-hero:has(.t2-hero-img){background:var(--t2-navy)}
-html[data-t2-hero=full] .t2-hero:has(.t2-hero-img) .t2-hero-in{grid-template-columns:minmax(0,1fr)}
+html[data-t2-hero=full] .t2-hero:has(.t2-hero-img) .t2-hero-in{grid-template-columns:minmax(0,1fr);position:static}
 html[data-t2-hero=full] .t2-hero:has(.t2-hero-img) .t2-hero-media{position:absolute;inset:0;margin:0;z-index:0}
 html[data-t2-hero=full] .t2-hero:has(.t2-hero-img) .t2-hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(var(--t2-shd-rgb),.78) 0%,rgba(var(--t2-shd-rgb),.5) 45%,rgba(var(--t2-shd-rgb),.12) 100%)}
 html[data-t2-hero=full] .t2-hero:has(.t2-hero-img) .t2-hero-img{height:100%;aspect-ratio:auto;border-radius:0;box-shadow:none}
