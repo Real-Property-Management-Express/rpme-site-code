@@ -58,6 +58,15 @@ Put `data-t2v` on a section to switch its layout:
 | `showcase` | Amenities | Photo mosaic (`.t2-amosaic`) beside the list |
 | `spotlight` | Featured amenity cards | Large alternating photo and text rows, numbered |
 
+## Property-specific pages
+
+Any site can add its own pages (for example a "Mayo Clinic Housing" page) built from the shared classes. Useful hooks:
+
+- **Route map:** put `data-t2-dest="Name|lng,lat;Name|lng,lat"` on the section that holds a map. The map draws the driving route from the property to each place, adds numbered pins, and fills a `ul.t2-route-list` inside that section (created after the map if missing) with numbered rows showing drive time, miles and a directions link. Names show on hover.
+- **Split page hero:** add the combo class `t2-phero-split` to `t2-phero` to place the map beside the heading on desktop, with the route list under the intro. On phones it stacks: text, map, list.
+- **FAQ block:** `details.t2-faq` > `summary.t2-faq-q` + `p.t2-faq-a` inside `.t2-faq-list`. FAQ structured data for search engines is added automatically.
+- New Webflow classes are created empty; all styling stays in `t2.css`.
+
 ## Releases
 
 - Work happens on `main`. Test versions are tagged with a pre-release label (`1.4.3-rc.1`); sites on `@1` ignore them.
