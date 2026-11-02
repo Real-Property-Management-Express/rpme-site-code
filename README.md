@@ -90,7 +90,7 @@ Each site's `window.T2S` (in its T2Settings script) picks a starting preset, the
 | `layout.cta` | `split` (default), `band`, `minimal`, `overlay` | Closing call to action: color card with photo, full-width color band, simple lined row, or text over the photo |
 | `layout.strip` | `dark` (default), `light` | "Included with your rent" strip under the hero |
 | `layout.divider` | `none` (default), `line` | Thin line between sections |
-| `words.plans` | `short` (1 Bed), `medium` (1 Bedroom), `long` (One Bedroom) | Floor plan card names and their "See … Plans" buttons. Bath counts are added only when two plans share a bedroom count. Names that don't read like a bedroom count are left alone. |
+| `words.plans` | `short` (1 Bed), `medium` (1 Bedroom), `long` (One Bedroom) | Floor plan card names and their "See … Plans" buttons. When two plans share a bedroom count, every card in that set names its baths too, in the same style (1 Bed, 1 Bath / 1 Bedroom, 1 Bathroom / One Bedroom, One Bathroom). Names that don't read like a bedroom count are left alone. |
 | `layout.order` | list, for example `['amenities','plans']` | Home section order: any of `plans`, `amenities`, `neighborhood`, `faqs`, `reviews`, `gallery`; listed sections move, in that order, to where the first of them was |
 
 Each preset (except modern) also picks section layouts, so two sites on different presets differ throughout the site, not just in the hero. Any `layout` setting overrides the preset's pick, and settings override `data-t2v` attributes set in Webflow.
