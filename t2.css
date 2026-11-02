@@ -752,3 +752,9 @@ body{transition:opacity .25s ease}
 .t2-commute-o:hover,.t2-commute-o.on{background:var(--t2-paper)}
 .t2-commute-r{margin:12px 0 0;font:600 16px/1.4 var(--t2-sans);color:var(--t2-acc-dk)}
 .t2-commute-r:empty{display:none}
+.t2-notify{max-width:var(--t2-max);margin:18px auto 0;padding:0 var(--t2-pad);text-align:center;font:400 17px/1.5 var(--t2-sans);color:var(--t2-mut)}
+.t2-notify a{font-weight:600;color:var(--t2-navy);text-decoration:underline;text-decoration-color:var(--t2-acc);text-decoration-thickness:2px;text-underline-offset:4px;transition:color .2s}
+.t2-notify a:hover{color:var(--t2-acc-dk)}
+.t2-pop-plan{display:block;margin:0 0 18px}
+.t2-pop-plan span{display:block;margin:0 0 8px;font:600 15px/1.3 var(--t2-sans);color:var(--t2-navy)}
+.t2-pop-plan select{width:100%;appearance:auto}
