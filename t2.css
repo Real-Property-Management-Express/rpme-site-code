@@ -840,7 +840,7 @@ html[data-t2-divider=line] .t2-sec+.t2-sec:not(.t2-reviews):not(.t2-hood){border
 .t2-faqs[data-t2v=inline] .t2-lead{grid-column:2;margin:0}
 .t2-faqs[data-t2v=inline] .t2-split-copy .t2-btn{grid-column:2;justify-self:start;margin:0}
 @media (max-width:767px){.t2-faqs[data-t2v=inline] .t2-split-copy{grid-template-columns:minmax(0,1fr)}.t2-faqs[data-t2v=inline] :is(.t2-h2,.t2-lead,.t2-split-copy .t2-btn){grid-column:1;grid-row:auto}}
-.t2-mk.has-logo .t2-mk-pin{background:#fff}
+.t2-mk.has-logo .t2-mk-pin{background:#fff;border-color:var(--t2-navy)}
 .t2-mk-ic{display:block;width:26px;height:26px;object-fit:contain;transform:rotate(45deg)}
 @media (hover:hover){.t2-mk.has-logo:hover .t2-mk-pin{background:#fff}}
 @media (max-width:479px){.t2-plan-btns>.t2-3d:has(+.t2-3d),.t2-plan-btns>.t2-3d+.t2-3d{grid-column:1/-1}}
