@@ -1,4 +1,4 @@
-(function(){var W=window,D=document;W.T2V='1.2.0-rc.2';
+(function(){var W=window,D=document;W.T2V='1.2.0-rc.3';
 function theme(s){s=s||{};var d=document.documentElement.style;function h(x){x=x.replace('#','');return[0,2,4].map(function(i){return parseInt(x.substr(i,2),16)})}function m(c,t,p){var b=h(t);return'#'+h(c).map(function(v,i){v=Math.round(v+(b[i]-v)*p);return(v<16?'0':'')+v.toString(16)}).join('')}function v(k,x){d.setProperty('--t2-'+k,x)}var P=s.pri,A=s.acc,D=s.accDk||m(A,'#000000',.21),Q=s.paper;v('navy',P);v('navy-dk',s.priDk||m(P,'#000000',.25));v('pri-rgb',h(P)+'');v('acc',A);v('acc-rgb',h(A)+'');v('acc-lt',s.accLt||m(A,'#ffffff',.1));v('acc-dk',D);v('accdk-rgb',h(D)+'');v('paper',Q);v('paper-rgb',h(Q)+'');v('paper-dk',s.paperDk||m(Q,'#000000',.06));v('field',s.field||m(Q,'#000000',.13));v('shd-rgb',s.shd||h(m(P,'#000000',.43))+'');v('disp',s.font);v('disp-w',s.w||400);if(s.fontUrl){var l=document.createElement('link');l.rel='stylesheet';l.href=s.fontUrl;document.head.appendChild(l)}var C=s.preset=='classic',S='rgba(var(--t2-shd-rgb),';(C?'6,6,4,3,6,6,4':'18,16,12,8,22,14,10').split(',').forEach(function(r,i){v('r'+(i?i+1:''),r+'px')});v('pill',C?'4px':'999px');v('rk',C?.34:1);v('tk',C?0:1);v('dk',C?.78:1);v('nav-a',C?1:.86);v('glass',C?'none':'saturate(1.4) blur(14px)');v('glass2',C?'none':'saturate(1.4) blur(12px)');v('bcase',C?'uppercase':'none');v('btrack',C?'.06em':'normal');var c='0 0 0 1px rgba(var(--t2-pri-rgb),.10),0 6px 16px '+S+'.07)',z=['8px 24px S.06','18px 40px S.12','8px 18px S.22','12px 30px S.12','30px 70px S.12','0 0 3px rgba(var(--t2-acc-rgb),.28','30px 80px rgba(0,0,0,.3','6px 18px rgba(0,0,0,.18','20px 50px S.12','30px 70px S.16','16px 40px S.16','10px 30px S.08','16px 40px S.12','8px 20px rgba(var(--t2-accdk-rgb),.28','14px 30px rgba(0,0,0,.32'];v('shc',C?c:'0 12px 30px '+S+'.12)');z.forEach(function(x,i){v('sh'+i,C?c:'0 '+x.replace('S',S)+')')});var o=s.vars||{};for(var k in o)if(o.hasOwnProperty(k))v(k,o[k])}
 if(W.T2S){try{theme(W.T2S);}catch(e){}}else{var t2s;try{Object.defineProperty(W,'T2S',{configurable:true,enumerable:true,get:function(){return t2s;},set:function(v){t2s=v;try{theme(v);}catch(e){}}});}catch(e){D.addEventListener('DOMContentLoaded',function(){theme(W.T2S);});}}
 W.T2PROMO_STD=W.T2PROMO_STD||'Promotions apply to select apartments and lease terms, are available for a limited time, and may change or end without notice. Move-in dates and other eligibility requirements apply. Contact our leasing office for current details.';
@@ -32,7 +32,7 @@ var t=setTimeout(function(){undo('timed out');},9000);
 var map=new mapboxgl.Map({accessToken:TOKEN,container:box,style:'mapbox://styles/mapbox/light-v11',center:ll,zoom:14,cooperativeGestures:true,attributionControl:false});
 map.addControl(new mapboxgl.AttributionControl({compact:true}),'bottom-right');map.addControl(new mapboxgl.NavigationControl({showCompass:false}),'bottom-right');
 map.on('error',function(e){var s=e&&e.error&&e.error.status;if(s===401||s===403)undo('token '+s);});
-map.on('load',function(){if(done)return;clearTimeout(t);brand(map);
+map.on('load',function(){if(done)return;clearTimeout(t);brand(map);box.t2map=map;try{document.dispatchEvent(new CustomEvent('t2:map',{detail:{map:map,box:box}}));}catch(e){}
 var el=document.createElement('div');el.className='t2-mk';el.innerHTML='<span class="t2-mk-pin"><svg viewBox="0 0 12 12" aria-hidden="true"><path fill="currentColor" d="M6 .8 11.2 6 6 11.2.8 6Z"/></svg></span><span class="t2-mk-lbl"></span>';el.querySelector('.t2-mk-lbl').textContent=C.name||'';if(!C.name)el.querySelector('.t2-mk-lbl').remove();
 el.addEventListener('click',function(){window.open(DIR,'_blank','noopener');});el.title='Get directions to '+(C.name||C.addr);
 new mapboxgl.Marker({element:el,anchor:'bottom'}).setLngLat(ll).addTo(map);
@@ -166,14 +166,26 @@ D.body.appendChild(m);m.addEventListener('click',function(e){if(e.target===m||e.
 last=D.activeElement;m.classList.add('on');D.documentElement.style.overflow='hidden';m.querySelector('.t2-tm-x').focus();}
 W.t2Fees=open;addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 D.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-t2-fees],a[href$="#fees"]');if(!a)return;e.preventDefault();open();});
-function addBtn(){var x=D.querySelector('#or3d .xp');if(!x||D.querySelector('#or3d .t2-fees-xp'))return;var w=D.createElement('div');w.className='xp t2-fees-xp';w.innerHTML='<button type="button" class="xp-btn t2-fees-btn" data-t2-fees><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg><span>See all fees</span></button>';x.parentNode.insertBefore(w,x.nextSibling);}
-addBtn();if(W.MutationObserver)new MutationObserver(addBtn).observe(fd,{childList:true,subtree:true});
 if(location.hash==='#fees')setTimeout(open,300);})();
 }catch(e){console.error(e);}
 try{(function(){if(!D.querySelector('.faq-div'))return;var T=W.T2||{},p=String(T.path||'/apartments').split('#')[0];
 var L=[[/resident benefits package|security deposit|pet fees/i,'See every fee',p+'#fees'],[/move-in special|how do i apply/i,'See available apartments',p+'#availability'],[/schedule a tour/i,'Schedule a tour','/contact'],[/contact the leasing office/i,'Contact us','/contact']];
 [].forEach.call(D.querySelectorAll('.faq-div .faq-dropdown'),function(d){var q=d.querySelector('.faq-dropdown-toggle .faq-text'),a=d.querySelector('.faq-text.answer');if(!q||!a||a.querySelector('.t2-faq-link'))return;
 for(var i=0;i<L.length;i++){if(L[i][0].test(q.textContent)){var l=D.createElement('a');l.className='t2-faq-link';l.href=L[i][2];l.textContent=L[i][1]+' →';a.appendChild(D.createTextNode(' '));a.appendChild(l);break;}}});})();
+}catch(e){console.error(e);}
+try{(function(){var P=W.T2&&T2.map&&T2.map.pois;if(!P||!D.querySelector('.t2-poi-item'))return;
+function key(s){return String(s).toLowerCase().replace(/[‘’]/g,"'").replace(/\s+/g,' ').trim();}
+var K={};for(var n in P)if(P.hasOwnProperty(n))K[key(n)]=P[n];
+function hook(map,box){if(!box.closest||!box.closest('.t2-phero-map')||box.t2pois)return;box.t2pois=1;var b=new mapboxgl.LngLatBounds();b.extend(map.getCenter());var any=0;
+[].forEach.call(D.querySelectorAll('.t2-poi-item'),function(li){var sp=li.querySelector('span')||li,nm=(sp.textContent||'').trim(),ll=K[key(nm)];if(!ll)return;any=1;b.extend(ll);
+var el=D.createElement('div');el.className='t2-pmk';el.innerHTML='<span class="t2-pmk-dot"></span><span class="t2-pmk-l"></span>';el.querySelector('.t2-pmk-l').textContent=nm;el.setAttribute('aria-hidden','true');
+new mapboxgl.Marker({element:el}).setLngLat(ll).addTo(map);li.classList.add('has-pin');if(!li.hasAttribute('tabindex'))li.tabIndex=0;
+function on(){el.classList.add('on');li.classList.add('is-hl');}function off(){el.classList.remove('on');li.classList.remove('is-hl');}
+el.addEventListener('mouseenter',on);el.addEventListener('mouseleave',off);li.addEventListener('mouseenter',on);li.addEventListener('mouseleave',off);li.addEventListener('focus',on);li.addEventListener('blur',off);
+li.addEventListener('click',function(){var o=el.classList.contains('on');[].forEach.call(D.querySelectorAll('.t2-pmk.on,.t2-poi-item.is-hl'),function(x){x.classList.remove('on','is-hl');});if(!o)on();});});
+if(any)map.fitBounds(b,{padding:{top:70,bottom:50,left:50,right:50},maxZoom:15,duration:0});}
+D.addEventListener('t2:map',function(e){hook(e.detail.map,e.detail.box);});
+[].forEach.call(D.querySelectorAll('.t2-mbx'),function(x){if(x.t2map)hook(x.t2map,x);});})();
 }catch(e){console.error(e);}
 }
 if(D.readyState==='loading')D.addEventListener('DOMContentLoaded',run);else run();
