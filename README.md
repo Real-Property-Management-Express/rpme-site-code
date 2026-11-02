@@ -81,6 +81,26 @@ Each site's `window.T2S` (in its T2Settings script) picks a starting preset, the
 | `layout.hood` | `beside` (default), `stacked` | Neighborhood: map beside the lists or above them |
 | `layout.gallery` | `varied` (default), `grid` | Home gallery: featured layout or an even grid |
 | `layout.fees` | `cards` (default), `stacked` | Fees: side by side or one column |
+| `layout.plans` | `cards` (default), `rows` | Home floor plans: tall cards or two-column rows |
+| `layout.amenities` | `split` (default), `checklist`, `showcase`, `stack` | Home amenities: list beside the heading, card list, photo mosaic (falls back to `checklist` without photos), or centered |
+| `layout.features` | `cards` (default), `spotlight` | Amenities page featured cards: grid or large alternating rows |
+| `layout.nearby` | `plain` (default), `panel` | Home neighborhood teaser: full-color band or light panel |
+| `layout.faqs` | `split` (default), `stack` | Home FAQ teaser: beside or centered |
+| `layout.reviews` | `dark` (default), `light`, `quote` | Reviews: dark banner, light banner with cards, or one large quote |
+| `layout.cta` | `split` (default), `band`, `minimal`, `overlay` | Closing call to action: color card with photo, full-width color band, simple lined row, or text over the photo |
+| `layout.strip` | `dark` (default), `light` | "Included with your rent" strip under the hero |
+| `layout.divider` | `none` (default), `line` | Thin line between sections |
+| `layout.order` | list, for example `['amenities','plans']` | Home section order: any of `plans`, `amenities`, `neighborhood`, `faqs`, `reviews`, `gallery`; listed sections move, in that order, to where the first of them was |
+
+Each preset (except modern) also picks section layouts, so two sites on different presets differ throughout the site, not just in the hero. Any `layout` setting overrides the preset's pick, and settings override `data-t2v` attributes set in Webflow.
+
+| Preset | Layouts it picks |
+|---|---|
+| modern | none (uses the page's own variants) |
+| classic | plans rows, amenities checklist, features cards, nearby panel, FAQs stack, reviews light, CTA band, divider line |
+| editorial | hero full, gallery grid, plans rows, amenities showcase, features spotlight, nearby panel, FAQs split, reviews quote, CTA minimal, strip light, divider line |
+| warm | hero centered, plans cards, amenities showcase, features cards, nearby plain, FAQs stack, reviews light, CTA overlay |
+| bold | hero full, plans cards, amenities checklist, features spotlight, nearby plain, FAQs split, reviews dark, CTA band |
 
 Presets: **modern** is soft and rounded with glass effects; **classic** is crisp with small radii and caps buttons; **editorial** is square, airy, outlined cards, white sections, larger tighter headings, calm motion; **warm** is extra rounded with soft lifted cards; **bold** is medium radii, caps buttons, larger tighter headings, deeper section tint, compact spacing.
 
@@ -88,7 +108,7 @@ Example: `window.T2S={pri:'#2f4a3a',acc:'#c9a46a',paper:'#f6f2ea',font:'...',pre
 
 Map colors (land, water, parks, buildings, labels) come from the site's paper and primary colors. `T2.map.colors` can override any of them.
 
-**Preview on staging:** on a webflow.io address, add query settings to any page URL to try a vibe without changing the site, for example `?vibe=editorial&hero=full&gallery=grid&cards=outlined`. Works for `vibe`, every dial above, `headings` (number) and the four layouts.
+**Preview on staging:** on a webflow.io address, add query settings to any page URL to try a vibe without changing the site, for example `?vibe=editorial&hero=full&gallery=grid&cards=outlined`. Works for `vibe`, every dial above, `headings` (number), every layout (`?reviews=quote&cta=overlay`) and `order` (`?order=amenities,plans`). With `vibe` in the URL the site's own layout settings are ignored, so the preview shows the preset as a new site would get it.
 
 ## Layout variants
 
