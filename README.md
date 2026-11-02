@@ -47,6 +47,22 @@ window.T2PROMO={text:'',terms:'',start:'',end:''};
 - `T2PROMO`: empty `text` = no banner; `start`/`end` are `YYYY-MM-DD`, inclusive.
 - `T2.fees` (optional): the "What You'll Pay" section under Available Apartments uses the standard fees in `t2.js`. A site can change any row by key (`rent`, `rbp`, `ltl`, `utilities`, `petRent`, `parking`, `garage`, `storage`, `appFee`, `holding`, `docSetup`, `service`, `petFee`): a string sets the amount, `false` hides the row, `<key>Name` renames it and `<key>Desc` replaces its description. `parking`, `garage` and `storage` only show when set. `utilities` takes the method (Included, Paid to provider, Flat rate, RUBS, Lifestyle fee) and picks the matching description. `optional:[{name,value,desc}]` adds optional monthly rows; `asOf` sets the footnote date.
 
+## Neighborhood categories
+
+Each Neighborhood place card (`.t2-pcard`) has its own heading and icon, set per site in Webflow: rename the heading to fit the property (for example Food & Drink, Bars & Nightlife, Entertainment) and paste the matching icon below as the first child of `.t2-pcard-h`. The map pins copy the card's icon automatically. Use as many cards as the property needs.
+
+| Icon | Use for | SVG |
+|---|---|---|
+| Coffee | Dining & Coffee | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><path d="M4 10h12v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5Z"/><path d="M16 11.5h1.5a2.5 2.5 0 0 1 0 5H15.6"/><path d="M8 3.5c-.8.9-.8 1.9 0 2.8M12 3.5c-.8.9-.8 1.9 0 2.8"/></svg>` |
+| Food | Food & Drink, Restaurants | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><circle cx="12" cy="13" r="6.5"/><circle cx="12" cy="13" r="3.5"/><path d="M3 4v4.5M3 6.5h0M2 4v3a1 1 0 0 0 2 0V4M3 8.5V21M21 4c-1.3 1-2 2.5-2 5h2v12"/></svg>` |
+| Drinks | Bars & Nightlife | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><path d="M5 4h14l-7 8Z"/><path d="M12 12v8M8 20h8"/><path d="M8.5 8h7"/></svg>` |
+| Shopping | Shopping & Essentials | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><path d="M5 8h14l-1 12H6Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>` |
+| Parks | Parks & Recreation | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><path d="M12 3 7 10h3l-4 6h12l-4-6h3Z"/><path d="M12 16v5"/></svg>` |
+| Entertainment | Entertainment | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><path d="M4 8a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v8a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2Z"/><path d="M14 6v12" stroke-dasharray="1.5 2"/></svg>` |
+| Fitness | Fitness | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><path d="M6.5 7v10M17.5 7v10M3.5 9.5v5M20.5 9.5v5M6.5 12h11"/></svg>` |
+| Schools | Schools | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><path d="M2.5 9 12 5l9.5 4-9.5 4Z"/><path d="M6.5 11v4.5c1.5 1.2 3.4 2 5.5 2s4-.8 5.5-2V11M21.5 9v5"/></svg>` |
+| Health | Health Care | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>` |
+
 ## Layout variants
 
 Put `data-t2v` on a section to switch its layout:

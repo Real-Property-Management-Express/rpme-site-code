@@ -342,7 +342,9 @@ a.form-contact-link-block:hover .label::after,a.form-contact-link-block:focus-vi
 .t2-band-p{margin:0;font:400 16px/1.6 var(--t2-sans);color:rgba(255,255,255,.78)}
 .t2-ctap-sec{background:#fff;padding:clamp(64px,8vw,112px) var(--t2-pad)}
 .t2-sec:not(.t2-fees):not(.t2-faqs):not(.t2-amenities):not(.t2-reviews)+.t2-ctap-sec,.base-section:not(:has(.form-div))+.t2-ctap-sec{padding-top:clamp(12px,2vw,24px)}
+.t2-plans:has(+.t2-sec .t2-avail){padding-bottom:clamp(48px,5vw,72px)}
 .t2-plans+.t2-sec:has(.t2-avail){padding-top:0}
+.t2-plans+.t2-sec:has(.t2-avail)::before{content:"";display:block;max-width:var(--t2-max);margin:0 auto clamp(48px,5vw,72px);border-top:1px solid var(--t2-line)}
 .t2-ctap{max-width:var(--t2-max);margin:0 auto;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);border-radius:var(--t2-r5);overflow:hidden;background:var(--t2-navy);color:#fff;font-family:var(--t2-sans)}
 .t2-ctap-copy{padding:clamp(36px,5vw,72px);align-self:center}
 .t2-ctap .t2-h2{color:#fff}
@@ -757,6 +759,7 @@ body{transition:opacity .25s ease}
 .t2-rev-q{display:flex;flex-direction:column;padding:clamp(22px,2.4vw,30px);border:1px solid rgba(255,255,255,.14);border-radius:var(--t2-r2);background:rgba(255,255,255,.06)}
 .t2-rev-q .t2-stars{font-size:18px}
 .t2-rev-q blockquote{flex:1;margin:14px 0 18px;padding:0;border:0;font:400 17px/1.6 var(--t2-sans);color:#fff}
-.t2-rev-by{margin:0;font:500 15px/1.3 var(--t2-sans);color:rgba(255,255,255,.7)}
 @media (max-width:991px){.t2-rev-list{grid-template-columns:1fr}}
 @media (max-width:767px){.t2-rev{flex-direction:column;text-align:center}}
+.t2-reviews .t2-rev-go{background:#fff;border-color:#fff;color:var(--t2-navy);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.t2-reviews .t2-rev-go:hover{background:var(--t2-paper);border-color:var(--t2-paper);color:var(--t2-navy)}
