@@ -538,8 +538,8 @@ a.form-contact-link-block:hover .label::after,a.form-contact-link-block:focus-vi
 @media (max-width:991px){.t2-band-list,.t2-band-list:has(>.t2-band-item:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:767px){.t2-acards,.t2-acards.t2-four{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row dense;gap:8px}.t2-acard{column-gap:8px;padding:12px}.t2-acard::after,.t2-band-item.has-desc::after{width:28px;height:28px;margin-right:-4px;background-size:12px 1.5px,1.5px 12px}.t2-acard .t2-ic{width:16px;height:16px;padding:6px}.t2-acard-name{font-size:14.5px}.t2-band-list,.t2-band-list:has(>.t2-band-item:nth-child(4):last-child){grid-template-columns:1fr;gap:8px}.t2-band-item{padding:12px 14px}.t2-band-h{font-size:16px}.t2-acard-desc,.t2-band-item .t2-band-p{display:none}.t2-acard.is-open,.t2-band-item.is-open{border-radius:var(--t2-r2);filter:none;box-shadow:var(--t2-sh11)}.t2-acard.is-open{grid-column:1/-1}.t2-acard.is-open .t2-acard-desc,.t2-band-item.is-open .t2-band-p{display:block;position:static;grid-column:1/-1;grid-row:2;margin-top:10px;padding:0;font-size:14.5px;background:none}}
 @media (prefers-reduced-motion:reduce){.t2-acard,.t2-band-item,.t2-acard::after,.t2-band-item::after,.t2-acard .t2-ic,.t2-band-item .t2-ic,.t2-acard-desc,.t2-band-p{transition:none}.t2-acard:hover,.t2-band-item:hover{transform:none}}
-.t2-pbw{position:relative;display:inline-block}
-.t2-pbs{appearance:none;border:0;background:none;margin:0;padding:0 2px 0 1px;font:inherit;font-size:.85em;font-weight:700;color:inherit;line-height:1;vertical-align:.35em;cursor:pointer}
+.t2-pbw{position:relative;display:inline-block;font-size:.85em;line-height:1;vertical-align:.35em}
+.t2-pbs{appearance:none;border:0;background:none;margin:0;padding:0 2px 0 1px;font:inherit;font-weight:700;color:inherit;line-height:1;vertical-align:top;cursor:default}
 .t2-pbw:hover .t2-pbs,.t2-pbw.open .t2-pbs{color:var(--t2-navy)}
 .t2-pb.calm .t2-pbw:hover .t2-pbs,.t2-pb.calm .t2-pbw.open .t2-pbs{color:var(--t2-acc-dk)}
 .t2-pbs:focus-visible{outline:2px solid currentColor;outline-offset:2px;border-radius:3px}
