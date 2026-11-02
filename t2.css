@@ -700,6 +700,11 @@ button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:
 .t2-route-t{font:500 14px/1.4 var(--t2-sans);color:var(--t2-mut)}
 .t2-route-go{margin-top:6px;font:600 14px/1 var(--t2-sans);color:var(--t2-acc-dk);text-decoration:none}
 .t2-route-go:hover{text-decoration:underline}
+.t2-phero .t2-route-list{grid-template-columns:1fr;gap:8px;margin-top:clamp(20px,2.4vw,28px);max-width:520px}
+.t2-phero .t2-route-i{flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:2px 14px;padding:12px 16px}
+.t2-phero .t2-route-n{flex:1 1 0;min-width:0;font-size:15px}
+.t2-phero .t2-route-t{font-size:14px}
+.t2-phero .t2-route-go{margin:0;font-size:14px}
 html.t2-wait body{opacity:0}
 body{transition:opacity .25s ease}
 @media (prefers-reduced-motion:reduce){body{transition:none}}
