@@ -106,7 +106,7 @@ Presets: **modern** is soft and rounded with glass effects; **classic** is crisp
 
 Example: `window.T2S={pri:'#2f4a3a',acc:'#c9a46a',paper:'#f6f2ea',font:'...',preset:'warm',buttons:'soft',layout:{hero:'centered',gallery:'grid'}}`
 
-Map colors (land, water, parks, buildings, labels) come from the site's paper and primary colors. `T2.map.colors` can override any of them. `T2.map.icon` (optional) = the URL of the property's icon (the brand library's `CODE_Icon_Color.png`, uploaded to the site's Assets) shows inside the property pin on every map.
+Map colors (land, water, parks, buildings, labels) come from the site's paper and primary colors. `T2.map.colors` can override any of them. `T2.map.icon` (optional) = the URL of the property's icon shows inside the property pin on every map. Use the brand library's `CODE_Icon_White.png` (light icon on the dark pin), uploaded to the site's Assets.
 
 **Preview on staging:** on a webflow.io address, add query settings to any page URL to try a vibe without changing the site, for example `?vibe=editorial&hero=full&gallery=grid&cards=outlined`. Works for `vibe`, every dial above, `headings` (number), every layout (`?reviews=quote&cta=overlay`) and `order` (`?order=amenities,plans`). With `vibe` in the URL the site's own layout settings are ignored, so the preview shows the preset as a new site would get it.
 
