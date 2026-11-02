@@ -685,7 +685,7 @@ button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:
 .t2-phero.t2-phero-solo{padding-bottom:clamp(32px,4vw,56px)}
 .t2-mk-go{display:none;font-weight:600;color:var(--t2-acc-dk)}
 @media (hover:hover){.t2-mk.go-ready:hover .t2-mk-go,.t2-pmk.go-ready:hover .t2-mk-go{display:inline}}
-.t2-mbx-all{position:absolute;left:14px;top:60px;z-index:2;height:38px;padding:0 14px;border:0;border-radius:var(--t2-pill);background:#fff;color:var(--t2-navy);font:600 14px/1 var(--t2-sans);box-shadow:var(--t2-shc);cursor:pointer;transition:background-color .2s,color .2s}
+.t2-mbx-all{position:absolute;left:14px;top:14px;z-index:2;height:38px;padding:0 14px;border:0;border-radius:var(--t2-pill);background:#fff;color:var(--t2-navy);font:600 14px/1 var(--t2-sans);box-shadow:var(--t2-shc);cursor:pointer;transition:background-color .2s,color .2s}
 .t2-mbx-all:hover{background:var(--t2-navy);color:#fff}
 .t2-mbx-all[hidden]{display:none}
 .t2-trail-tip{position:absolute;left:0;top:0;z-index:3;padding:5px 10px;border-radius:var(--t2-pill);background:#fff;color:var(--t2-navy);font:600 13px/1 var(--t2-sans);white-space:nowrap;box-shadow:var(--t2-shc);pointer-events:none}
@@ -709,8 +709,6 @@ button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:
 @keyframes t2card{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.t2-poi-card{animation:none}.t2-poi-item.has-pin::after{transition:none}}
 .t2-photonote{margin:14px 0 0;font-size:14px;line-height:1.5;color:inherit;opacity:.72}
-.t2-mbx-hint svg{width:17px;height:17px;flex:none;color:var(--t2-acc-dk)}
-.t2-mbx-hint{position:absolute;left:14px;top:14px;z-index:2;display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px 0 11px;border-radius:var(--t2-pill);background:#fff;color:var(--t2-navy);font:600 14px/1 var(--t2-sans);box-shadow:var(--t2-shc);pointer-events:none}
 .t2-pmk.has-ic{width:28px;height:28px}
 .t2-pmk-dot{color:#fff}
 .t2-pmk-dot svg{position:absolute;inset:0;margin:auto;width:15px;height:15px}
