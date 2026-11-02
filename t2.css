@@ -548,7 +548,7 @@ a.form-contact-link-block:hover .label::after,a.form-contact-link-block:focus-vi
 .t2-pb a:after{content:"";width:14px;height:14px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27none%27 stroke=%27%23000%27 stroke-width=%271.8%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M3 8h10M9 4l4 4-4 4%27/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .25s var(--t2-ease)}
 .t2-pb a:hover:after{transform:translateX(3px)}
 @media(max-width:767px){.t2-pbw{position:static}.t2-pbtip{left:16px;right:16px;width:auto;max-width:none;transform:translateY(4px)}.t2-pbw:hover .t2-pbtip,.t2-pbw.open .t2-pbtip,.t2-pbs:focus-visible+.t2-pbtip{transform:none}}
-.t2-pb{position:fixed;left:0;right:0;top:var(--t2-pbt,0px);z-index:999;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 12px;padding:7px var(--t2-pad);background:var(--t2-acc-dk);color:#fff;font:500 15px/1.4 var(--t2-sans);text-align:center;opacity:0;transform:translateY(-100%);transition:transform .55s var(--t2-ease),opacity .3s,background-color .9s,color .9s}
+.t2-pb{position:fixed;left:0;right:0;top:var(--t2-pbt,0px);z-index:999;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 12px;padding:7px var(--t2-pad);background:var(--t2-acc-dk);color:#fff;font:500 15px/1.4 var(--t2-sans);text-align:center;opacity:0;transform:translateY(-100%);transition:transform .55s var(--t2-ease),opacity .3s,background-color .9s,color .9s,box-shadow .9s}
 .t2-pb.on{opacity:1;transform:none}
 .t2-pb.on.hid{opacity:0;transform:translateY(-100%);pointer-events:none}
 .t2-pb.calm{background:var(--t2-paper-dk);color:var(--t2-navy);box-shadow:inset 0 -1px 0 rgba(var(--t2-pri-rgb),.08)}
@@ -556,8 +556,6 @@ a.form-contact-link-block:hover .label::after,a.form-contact-link-block:focus-vi
 .t2-pb b{font-weight:700}
 .t2-pb a{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 13px;border-radius:var(--t2-pill);background:#fff;color:var(--t2-navy);font:600 14px/1 var(--t2-sans);text-decoration:none;white-space:nowrap;transition:background-color .2s,color .2s,transform .2s,box-shadow .2s}
 .t2-pb a:hover{background:var(--t2-navy);color:#fff;transform:translateY(-1px);box-shadow:var(--t2-sh13)}
-.t2-pb.calm a{background:var(--t2-navy);color:#fff}
-.t2-pb.calm a:hover{background:var(--t2-acc-dk);color:#fff}
 html.t2-pbx .navbar{top:0;left:0}
 @media(max-width:767px){.t2-pb{font-size:14px;padding:6px 16px}}
 @media(prefers-reduced-motion:reduce){.t2-pb,.t2-pb a{transition:none}.t2-pb a:hover{transform:none}}
