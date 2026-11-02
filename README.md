@@ -26,6 +26,10 @@ In the site head, before any site settings script:
 
 `t2.js` loads early on purpose: it applies the theme as soon as the site settings script sets `window.T2S`, so colors are right on first paint. Everything else runs when the page is ready. `window.T2V` holds the loaded version.
 
+## One style source
+
+`t2.css` holds every class style. In Webflow, classes exist only so elements can carry them: their style properties stay empty (no Designer styling). Webflow still outputs its own `w-` helpers, element grid placements and state classes (`w--current`, `w--open`).
+
 ## Per-site settings (set in each site, not here)
 
 ```js
