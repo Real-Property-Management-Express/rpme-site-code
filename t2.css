@@ -361,7 +361,7 @@ a.form-contact-link-block:hover .label::after,a.form-contact-link-block:focus-vi
 .t2-pcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px)}
 .t2-pcard{padding:clamp(24px,2.6vw,34px);border-radius:var(--t2-r);background:var(--t2-paper)}
 .t2-pcard-h{display:flex;align-items:center;gap:14px;margin:0 0 14px;font:700 20px/1.25 var(--t2-sans);color:var(--t2-navy)}
-.t2-pcard-h .t2-ic{width:22px;height:22px;padding:11px;border-radius:var(--t2-r3);background:#fff;color:var(--t2-acc-dk);box-sizing:content-box}
+.t2-pcard-h .t2-ic{width:28px;height:28px;padding:12px;border-radius:var(--t2-r3);background:#fff;color:var(--t2-acc-dk);stroke-width:1.8;box-sizing:content-box;box-shadow:0 1px 2px rgba(var(--t2-shd-rgb),.06)}
 .t2-pcard .t2-poi-item{color:var(--t2-ink);border-bottom-color:var(--t2-line)}
 .t2-pcard .t2-poi-item:last-child{border-bottom:0}
 .t2-faqnav{position:sticky;top:120px;display:flex;flex-direction:column;gap:24px}
