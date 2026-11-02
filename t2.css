@@ -477,3 +477,5 @@ button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:
 .t2-tm-x::before,.t2-tm-x::after,.t2-pz-x::before,.t2-pz-x::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:2px;margin:-1px 0 0 -8px;border-radius:1px;background:currentColor;transform:rotate(45deg)}
 .t2-tm-x::after,.t2-pz-x::after{transform:rotate(-45deg)}
 .t2-tm .t2-tm-head{padding:14px 18px 14px 24px}
+.t2-phero+.t2-sec,.t2-phero+section{padding-top:clamp(40px,5vw,64px)}
+.t2-phero.t2-phero-solo{padding-bottom:clamp(32px,4vw,56px)}
