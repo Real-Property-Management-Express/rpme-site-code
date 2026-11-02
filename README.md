@@ -14,15 +14,15 @@ In the site head, before any site settings script:
 
 ```html
 <style>/* contents of t2-fallback.css */</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Real-Property-Management-Express/rpme-site-code@1/t2.css" onerror="this.onerror=function(){document.documentElement.classList.add('t2-fb')};this.href='https://real-property-management-express.github.io/rpme-site-code/t2.css'">
 <script>window.T2K={mapbox:'MAPBOX_PUBLIC_TOKEN'}</script>
-<script src="https://cdn.jsdelivr.net/gh/Real-Property-Management-Express/rpme-site-code@1/t2.js"></script>
-<script>window.T2V||document.write('<script src="https://real-property-management-express.github.io/rpme-site-code/t2.js"><\/script>')</script>
+<script>!function(w,d){var v='1',b='https://cdn.jsdelivr.net/gh/Real-Property-Management-Express/rpme-site-code@'+v+'/',q='?h='+Math.floor(Date.now()/36e5);w.T2G='https://real-property-management-express.github.io/rpme-site-code/';w.T2F=function(l){l.onerror=function(){d.documentElement.classList.add('t2-fb')};l.href=w.T2G+'t2.css'};d.write('<link rel="stylesheet" href="'+b+'t2.css'+q+'" onerror="T2F(this)"><script src="'+b+'t2.js'+q+'"><\/script>')}(window,document)</script>
+<script>window.T2V||document.write('<script src="'+T2G+'t2.js"><\/script>')</script>
 ```
 
-1. jsDelivr, on the major version line (`@1`), picks up every `1.x.y` release automatically.
-2. If jsDelivr fails, the same file loads from GitHub Pages (published from the `release` branch, so it only serves approved releases).
-3. If both fail, `t2-fallback.css` keeps the page readable.
+1. jsDelivr, on the major version line (`v='1'`), picks up every `1.x.y` release automatically. To test a pre-release on one site, set `v` to that exact version (for example `v='1.4.3-rc.1'`).
+2. `?h=` changes every hour, so browsers fetch the files again within an hour of a release instead of keeping a cached copy for up to 7 days.
+3. If jsDelivr fails, the same file loads from GitHub Pages (published from the `release` branch, so it only serves approved releases).
+4. If both fail, `t2-fallback.css` keeps the page readable.
 
 `t2.js` loads early on purpose: it applies the theme as soon as the site settings script sets `window.T2S`, so colors are right on first paint. Everything else runs when the page is ready. `window.T2V` holds the loaded version.
 
