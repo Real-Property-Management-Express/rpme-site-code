@@ -43,7 +43,7 @@ html.t2-scrolled .navbar{border-bottom-color:var(--t2-line);box-shadow:var(--t2-
 .t2-hero-in{width:100%;max-width:1380px;margin:0 auto;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,3vw,48px);align-items:center}
 .t2-hero-copy{position:relative;z-index:2;max-width:560px}
 .t2-loc{display:flex;align-items:center;gap:10px;margin:0 0 clamp(10px,2.2svh,22px);font:600 15px/1.3 var(--t2-sans);color:var(--t2-navy)}
-.t2-h1{font-size:calc(min(clamp(44px,7.6vw,118px),10svh)*var(--t2-dk,1));line-height:.92}
+.t2-h1{font-size:calc(max(clamp(52px,6.2vw,96px)*1.1,min(clamp(56px,7.6vw,118px),14svh))*var(--t2-dk,1));line-height:.92}
 .t2-tag{margin:clamp(6px,1.4svh,14px) 0 clamp(12px,2.6svh,26px);font-family:var(--t2-disp);font-weight:var(--t2-disp-w);font-size:min(clamp(24px,2.6vw,38px),4.4svh);line-height:1.1;color:var(--t2-acc-dk)}
 .t2-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(16px,3.4svh,34px)}
 .t2-facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:0 40px;margin:clamp(16px,4.6svh,48px) 0 0;padding:clamp(12px,2.2svh,22px) 0 0;list-style:none;border-top:1px solid var(--t2-line)}
@@ -480,5 +480,7 @@ button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:
 .t2-mbx-all:hover{background:var(--t2-navy);color:#fff}.t2-mbx-all[hidden]{display:none}
 .t2-trail-tip{position:absolute;left:0;top:0;z-index:3;padding:5px 10px;border-radius:var(--t2-pill);background:#fff;color:var(--t2-navy);font:600 13px/1 var(--t2-sans);white-space:nowrap;box-shadow:var(--t2-shc);pointer-events:none}
 .t2-trail-tip[hidden]{display:none}
+.t2-mbx-hint{position:absolute;left:14px;top:14px;z-index:2;padding:8px 12px;border-radius:var(--t2-pill);background:rgba(255,255,255,.92);color:var(--t2-navy);font:500 13px/1 var(--t2-sans);box-shadow:var(--t2-shc);pointer-events:none}
+.t2-mbx-hint[hidden]{display:none}
 .t2-pmk.has-ic{width:28px;height:28px}.t2-pmk-dot{color:#fff}.t2-pmk-dot svg{position:absolute;inset:0;margin:auto;width:15px;height:15px}
 .t2-pmk.has-ic .t2-pmk-l{left:34px}.t2-pmk-l b{font:inherit}.t2-pmk.sel{z-index:4}.t2-pmk.sel .t2-pmk-l{opacity:1;transform:translate(0,-50%);pointer-events:auto;cursor:pointer}
