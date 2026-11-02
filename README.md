@@ -63,6 +63,33 @@ Each Neighborhood place card (`.t2-pcard`) has its own heading and icon, set per
 | Schools | Schools | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><path d="M2.5 9 12 5l9.5 4-9.5 4Z"/><path d="M6.5 11v4.5c1.5 1.2 3.4 2 5.5 2s4-.8 5.5-2V11M21.5 9v5"/></svg>` |
 | Health | Health Care | `<svg aria-hidden="true" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="t2-ic"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>` |
 
+## Vibe system (1.3.0)
+
+Each site's `window.T2S` (in its T2Settings script) picks a starting preset, then any dial can override it. Leave a dial out to use the preset's choice. Sites that set none of these look exactly as before.
+
+| Setting | Values | What it changes |
+|---|---|---|
+| `preset` | `modern` (default), `classic`, `editorial`, `warm`, `bold` | Starting bundle of the dials below, plus corner radii, button case and shadows |
+| `corners` | `round`, `soft`, `square` | Radius of cards, images and frames |
+| `buttons` | `pill`, `soft`, `square` | Button shape |
+| `headings` | a number like `1.08`, or `{scale, track, case}` | Heading size, letter spacing (`track` multiplies the default tightening), `case:'uppercase'` |
+| `density` | `airy`, `standard`, `compact` | Vertical space between sections |
+| `cards` | `flat`, `outlined`, `elevated` | Place, amenity and other info cards |
+| `rhythm` | `tinted`, `white`, `deep` | Background of the tinted sections (amenities, FAQs, fees) |
+| `motion` | `full`, `calm`, `none` | Hero entrance and hover motion |
+| `layout.hero` | `split` (default), `full`, `centered` | Home hero: photo beside text, full-bleed photo behind text, or centered text over a wide photo |
+| `layout.hood` | `beside` (default), `stacked` | Neighborhood: map beside the lists or above them |
+| `layout.gallery` | `varied` (default), `grid` | Home gallery: featured layout or an even grid |
+| `layout.fees` | `cards` (default), `stacked` | Fees: side by side or one column |
+
+Presets: **modern** is soft and rounded with glass effects; **classic** is crisp with small radii and caps buttons; **editorial** is square, airy, outlined cards, white sections, larger tighter headings, calm motion; **warm** is extra rounded with soft lifted cards; **bold** is medium radii, caps buttons, larger tighter headings, deeper section tint, compact spacing.
+
+Example: `window.T2S={pri:'#2f4a3a',acc:'#c9a46a',paper:'#f6f2ea',font:'...',preset:'warm',buttons:'soft',layout:{hero:'centered',gallery:'grid'}}`
+
+Map colors (land, water, parks, buildings, labels) come from the site's paper and primary colors. `T2.map.colors` can override any of them.
+
+**Preview on staging:** on a webflow.io address, add query settings to any page URL to try a vibe without changing the site, for example `?vibe=editorial&hero=full&gallery=grid&cards=outlined`. Works for `vibe`, every dial above, `headings` (number) and the four layouts.
+
 ## Layout variants
 
 Put `data-t2v` on a section to switch its layout:

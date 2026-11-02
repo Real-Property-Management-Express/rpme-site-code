@@ -785,6 +785,7 @@ html[data-t2-hero=centered] .t2-hero:has(.t2-hero-img) .t2-hero-img{height:clamp
 @media (min-width:992px){html[data-t2-hood=stacked] .t2-nbx{grid-template-columns:minmax(0,1fr)}html[data-t2-hood=stacked] .t2-nbx-map{order:-1;position:relative;top:auto;height:clamp(380px,42vw,540px)}html[data-t2-hood=stacked] .t2-nbx .t2-pcards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 html[data-t2-gallery=grid] .t2-gal-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:none;height:auto}
 html[data-t2-gallery=grid] .t2-gal-item{aspect-ratio:4/3}
+html[data-t2-gallery=grid] .t2-gal-grid:has(>:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
 html[data-t2-gallery=grid] :is(.t2-gal-1,.t2-gal-4){grid-row:auto;grid-column:auto}
 @media (max-width:767px){html[data-t2-gallery=grid] .t2-gal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 html[data-t2-fees=stacked] .t2-fees-grid{grid-template-columns:minmax(0,1fr);max-width:880px;margin-left:auto;margin-right:auto}
