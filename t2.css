@@ -187,6 +187,7 @@ html.t2-js .t2-pin{opacity:0;margin-top:-10px}
 html.t2-js .t2-model-cap{opacity:0}
 html.t2-in .t2-hero .t2-loc,html.t2-in .t2-hero .t2-h1,html.t2-in .t2-hero .t2-tag,html.t2-in .t2-hero .t2-lead,html.t2-in .t2-hero .t2-actions,html.t2-in .t2-hero .t2-facts{opacity:1;transform:none;transition:opacity .8s var(--t2-ease),transform .9s var(--t2-ease)}
 html.t2-in .t2-hero .t2-h1{transition-delay:.08s}
+.t2-h1{-webkit-text-stroke:var(--t2-h1-bold,0) currentColor;paint-order:stroke fill}
 html.t2-in .t2-hero .t2-tag{transition-delay:.18s}
 html.t2-in .t2-hero .t2-lead{transition-delay:.26s}
 html.t2-in .t2-hero .t2-actions{transition-delay:.34s}
