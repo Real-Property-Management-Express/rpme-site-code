@@ -81,7 +81,7 @@ html.t2-scrolled .navbar{border-bottom-color:var(--t2-line);box-shadow:var(--t2-
 .navbar .nav-link{border-radius:10px;transition:color .2s,background-color .2s}
 .navbar .nav-link:hover{background:rgba(var(--t2-shd-rgb),.07);color:var(--t2-navy)!important}
 .navbar .nav-link.w--current{color:var(--t2-navy)!important;text-decoration:underline;text-decoration-color:var(--t2-acc-dk);text-decoration-thickness:3px;text-underline-offset:7px}
-.t2-band-cta{display:inline-flex;align-items:center;margin-top:12px;padding:9px 16px;border-radius:var(--t2-pill,999px);background:var(--t2-navy);color:#fff!important;font:600 14px/1 var(--t2-sans);text-decoration:none}
+.t2-band-cta{display:flex;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:calc(100% + 48px);margin:16px 0 0 -48px;padding:12px 16px;border-radius:var(--t2-r3,10px);background:var(--t2-navy);color:#fff!important;font:600 14px/1.2 var(--t2-sans);white-space:nowrap;text-decoration:none;transition:background-color .2s}@media (max-width:767px){.t2-band-cta{width:100%;margin:14px 0 0}}
 .t2-band-cta:hover{background:var(--t2-acc-dk)}
 .navbar .button.nav-tour-cta{white-space:nowrap}
 @media (max-width:767px){.navbar .brand-logo{height:48px!important}.navbar .button.nav-call-cta{display:none!important}.navbar .button.nav-tour-cta{height:40px;padding:0 14px!important;font-size:14px!important}}
