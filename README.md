@@ -47,6 +47,10 @@ window.T2PROMO={text:'',terms:'',start:'',end:'',cta:''};
 - `T2PROMO`: the banner shows only while `text` is set and today is within `start`/`end` (`YYYY-MM-DD`, inclusive), on every page except Contact and Thank You. The * opens `terms` (or the standard statement when empty), the button (`cta`, default "See Availability") goes to the Apartments page, and the FAQ move-in specials answer uses the promo. Empty `text` = no banner.
 - `T2.fees` (optional): the "What You'll Pay" section under Available Apartments uses the standard fees in `t2.js`. A site can change any row by key (`rent`, `rbp`, `ltl`, `utilities`, `petRent`, `parking`, `garage`, `storage`, `appFee`, `holding`, `docSetup`, `service`, `petFee`): a string sets the amount, `false` hides the row, `<key>Name` renames it and `<key>Desc` replaces its description. `parking`, `garage` and `storage` only show when set. `utilities` takes the method (Included, Paid to provider, Flat rate, RUBS, Lifestyle fee) and picks the matching description. `optional:[{name,value,desc}]` adds optional monthly rows; `asOf` sets the footnote date.
 
+## Virtually staged photos
+
+Any image whose alt text starts with "Virtually staged" gets a "Virtually staged" label in its bottom-left corner, and the same label shows when that photo opens in the lightbox. Upload staged photos without a baked-in watermark and start the alt text with "Virtually staged".
+
 ## Neighborhood categories
 
 Each Neighborhood place card (`.t2-pcard`) has its own heading and icon, set per site in Webflow: rename the heading to fit the property (for example Food & Drink, Bars & Nightlife, Entertainment) and paste the matching icon below as the first child of `.t2-pcard-h`. The map pins copy the card's icon automatically. Use as many cards as the property needs.
