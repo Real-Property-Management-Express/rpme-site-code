@@ -636,7 +636,7 @@ textarea.form-field{display:block;width:100%;height:108px!important;min-height:1
 .t2-mbx-dir svg{width:16px;height:16px}
 .t2-mbx-dir:hover{background:var(--t2-acc-dk,#a35a33);color:#fff!important}
 .t2-mbx-dir:focus-visible{outline:2px solid var(--t2-navy,#003566);outline-offset:3px}
-@media (max-width:767px){.t2-mk-lbl{font-size:13px;padding:6px 10px}.t2-mbx-dir{height:44px;padding:0 14px;font-size:15px}}
+@media (max-width:767px){.t2-mk-lbl{font-size:13px;padding:6px 10px;left:22px;top:58px;translate:-50% 0}.t2-mbx-dir{height:44px;padding:0 14px;font-size:15px}}
 .t2-fees{background:var(--t2-tint)}
 .t2-fees-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,24px);align-items:start}
 .t2-fee-card{padding:clamp(20px,2.4vw,28px);border-radius:var(--t2-r);background:#fff;box-shadow:var(--t2-shc)}
