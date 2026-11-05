@@ -95,6 +95,10 @@ Each site's `window.T2S` (in its T2Settings script) picks a starting preset, the
 | `layout.strip` | `dark` (default), `light` | "Included with your rent" strip under the hero |
 | `layout.avail` | `deep` (default), `plain` | Apartments page availability: section in the primary color, or white |
 | `layout.divider` | `none` (default), `line` | Thin line between sections |
+| `layout.bands` | `alternate` (default), `fixed` | Light sections take turns between white and a brand tint (primary plus a touch of accent mixed into the paper color), on every page, so no two white sections sit together. `fixed` keeps the old tinted amenities/FAQs only |
+| `layout.photo` | `auto` (default), `nearby`, `faqs`, `cta`, `none` | Home section shown over a photo with a primary-color wash. `auto` uses the FAQ teaser unless it sits next to a dark section, otherwise the neighborhood teaser. `T2S.photo` picks the photo: a gallery number (1-4) or an image URL; default is the hero photo |
+| `layout.art` | `apartments`, `townhomes`, `houses`, `none` | House-row skyline drawn in the site's colors: on top of the footer on every page, and at the bottom of the photo section (or rising into the dark neighborhood band) on Home. Default: `townhomes` when `T2.Noun` is Townhomes, `houses` on warm, else `apartments`. Each site gets its own row (seeded from its colors and name); windows use the light accent |
+| `layout.mark` | `roof` (default), `bar` (editorial default), `none` | Small mark above section headings: roofline with a door, plain accent bar, or nothing |
 | `words.plans` | `short` (1 Bed), `medium` (1 Bedroom), `long` (One Bedroom) | Floor plan card names and their "See … Plans" buttons. When two plans share a bedroom count, every card in that set names its baths too, in the same style (1 Bed, 1 Bath / 1 Bedroom, 1 Bathroom / One Bedroom, One Bathroom). Names that don't read like a bedroom count are left alone. |
 | `layout.order` | list, for example `['amenities','plans']` | Home section order: any of `plans`, `amenities`, `neighborhood`, `faqs`, `reviews`, `gallery`; listed sections move, in that order, to where the first of them was |
 
