@@ -79,7 +79,7 @@ Each site's `window.T2S` (in its T2Settings script) picks a starting preset, the
 | `headings` | a number like `1.08`, or `{scale, track, case}` | Heading size, letter spacing (`track` multiplies the default tightening), `case:'uppercase'` |
 | `density` | `airy`, `standard`, `compact` | Vertical space between sections |
 | `cards` | `flat`, `outlined`, `elevated` | Place, amenity and other info cards |
-| `rhythm` | `tinted`, `white`, `deep` | Background of the tinted sections (amenities, FAQs, fees) |
+| `rhythm` | `tinted`, `white`, `deep` | Background of the tinted sections (amenities, FAQs, fees). `tinted` and `deep` mix the primary color into the paper color so bands read as the brand |
 | `motion` | `full`, `calm`, `none` | Hero entrance and hover motion |
 | `layout.hero` | `split` (default), `full`, `centered` | Home hero: photo beside text, full-bleed photo behind text, or centered text over a wide photo |
 | `layout.hood` | `beside` (default), `stacked` | Neighborhood: map beside the lists or above them |
@@ -93,6 +93,7 @@ Each site's `window.T2S` (in its T2Settings script) picks a starting preset, the
 | `layout.reviews` | `dark` (default), `light`, `quote` | Reviews: dark banner, light banner with cards, or one large quote |
 | `layout.cta` | `split` (default), `band`, `minimal`, `overlay` | Closing call to action: color card with photo, full-width color band, simple lined row, or text over the photo |
 | `layout.strip` | `dark` (default), `light` | "Included with your rent" strip under the hero |
+| `layout.avail` | `deep` (default), `plain` | Apartments page availability: section in the primary color, or white |
 | `layout.divider` | `none` (default), `line` | Thin line between sections |
 | `words.plans` | `short` (1 Bed), `medium` (1 Bedroom), `long` (One Bedroom) | Floor plan card names and their "See … Plans" buttons. When two plans share a bedroom count, every card in that set names its baths too, in the same style (1 Bed, 1 Bath / 1 Bedroom, 1 Bathroom / One Bedroom, One Bathroom). Names that don't read like a bedroom count are left alone. |
 | `layout.order` | list, for example `['amenities','plans']` | Home section order: any of `plans`, `amenities`, `neighborhood`, `faqs`, `reviews`, `gallery`; listed sections move, in that order, to where the first of them was |
