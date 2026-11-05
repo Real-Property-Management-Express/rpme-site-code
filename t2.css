@@ -867,7 +867,7 @@ html[data-t2-divider=line] .t2-sec+.t2-sec:not(.t2-reviews):not(.t2-hood){border
 .w-lightbox-figure{position:relative}
 .w-lightbox-figure .t2-vsb{left:16px;bottom:16px;font-size:12px;padding:7px 13px 7px 11px}.t2-sec:has(>.t2-wrap>.t2-avail):not([data-t2v=plain]){background:var(--t2-navy);color:#fff;border-top:0}.t2-sec:has(>.t2-wrap>.t2-avail):not([data-t2v=plain]) :is(.t2-h2,.t2-lead){color:#fff}.t2-sec:has(>.t2-wrap>.t2-avail):not([data-t2v=plain]) .t2-lead{opacity:.82}.t2-sec:has(>.t2-wrap>.t2-avail):not([data-t2v=plain]) .t2-avail{box-shadow:0 24px 60px rgba(0,0,0,.35)}.t2-sec:not(.t2-reviews) :is(.t2-head-copy,.t2-split-copy,.t2-hood-top)>.t2-h2:first-child::before,.t2-ctap-copy>.t2-h2:first-child::before{content:"";display:block;width:44px;height:3px;border-radius:3px;background:var(--t2-acc);margin:0 var(--t2-bar-m,auto) 20px var(--t2-bar-m,0)}[data-t2v=stack] .t2-split-copy,.t2-ctap-sec[data-t2v=band] .t2-ctap{--t2-bar-m:auto}
 html.t2-pbx :is(.t2-hero-in,.t2-phero-in){margin-top:calc(var(--t2-pbh,0px) + 20px)}
-html{--t2-skyh:clamp(52px,7vw,112px)}
+html{--t2-skyh:clamp(36px,4.6vw,76px)}
 :root .t2-sec.t2-tone,:root .base-section.t2-tone{background:color-mix(in srgb,var(--t2-acc) 7%,var(--t2-tone,var(--t2-band)))}
 :root .t2-sec.t2-tone-w,:root .base-section.t2-tone-w{background:#fff}
 :root .t2-sec.t2-photo{position:relative;isolation:isolate;background:var(--t2-navy-dk);color:#fff;padding-top:calc(clamp(88px,11vw,150px)*var(--t2-sp,1));padding-bottom:calc(clamp(88px,11vw,150px)*var(--t2-sp,1))}
@@ -882,6 +882,6 @@ html{--t2-skyh:clamp(52px,7vw,112px)}
 .t2-skyed{position:relative}
 .t2-sky{position:absolute;left:0;right:0;bottom:-1px;z-index:1;height:var(--t2-skyh);line-height:0;pointer-events:none}
 .t2-sky svg{display:block;width:100%;height:100%}
-.t2-sky-w{fill:var(--t2-acc-lt);opacity:.9}
+.t2-sky-w{fill:var(--t2-acc-lt);opacity:.55}
 [data-t2-mark=roof] .t2-sec:not(.t2-reviews) :is(.t2-head-copy,.t2-split-copy,.t2-hood-top)>.t2-h2:first-child::before,[data-t2-mark=roof] .t2-ctap-copy>.t2-h2:first-child::before{width:58px;height:18px;border-radius:0;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 18'%3E%3Cpath d='M2 16h17L29 5l10 11h17' fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='26.5' y='11' width='5' height='5' rx='1'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 18'%3E%3Cpath d='M2 16h17L29 5l10 11h17' fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='26.5' y='11' width='5' height='5' rx='1'/%3E%3C/svg%3E") center/contain no-repeat}
 [data-t2-mark=none] .t2-sec :is(.t2-head-copy,.t2-split-copy,.t2-hood-top)>.t2-h2:first-child::before,[data-t2-mark=none] .t2-ctap-copy>.t2-h2:first-child::before{display:none}
