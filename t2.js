@@ -256,7 +256,7 @@ function bg(e){for(;e&&e.nodeType===1;e=e.parentElement){var c=getComputedStyle(
 function dark(e){return !!e&&lum(bg(e))<.5}
 function vis(e,dir){while(e&&(!e.offsetHeight||/^(SCRIPT|STYLE|LINK)$/.test(e.tagName)))e=e[dir];return e}
 function rng(t){var h=1779033703;for(var i=0;i<t.length;i++){h=Math.imul(h^t.charCodeAt(i),3432918353);h=h<<13|h>>>19}return function(){h=Math.imul(h^h>>>16,2246822507);h=Math.imul(h^h>>>13,3266489909);h^=h>>>16;return (h>>>0)/4294967296}}
-function sky(kind,seed){var r=rng(seed),X=1600,G=110,o='',b='',w='',x;function R(a,c){return a+r()*(c-a)}function f(n){return Math.round(n*10)/10}
+function sky(kind,seed){var r=rng(seed),X=2400,G=110,o='',b='',w='',x;function R(a,c){return a+r()*(c-a)}function f(n){return Math.round(n*10)/10}
 function win(a,c,d,e){w+='<rect x="'+f(a)+'" y="'+f(c)+'" width="'+f(d)+'" height="'+f(e)+'" rx="1"/>'}
 function tree(z){var t=r()<.4,cr=R(11,19)*(z?1.3:1),tx=x+cr,s='';if(t)s='<path d="M'+f(tx)+' '+f(G-cr*4)+'L'+f(tx+cr)+' '+(G-6)+'H'+f(tx-cr)+'Z"/><rect x="'+f(tx-1.5)+'" y="'+(G-8)+'" width="3" height="8"/>';else s='<rect x="'+f(tx-1.5)+'" y="'+(G-16)+'" width="3" height="16"/><circle cx="'+f(tx)+'" cy="'+f(G-16-cr*.75)+'" r="'+f(cr)+'"/><circle cx="'+f(tx+cr*.6)+'" cy="'+f(G-14-cr*.4)+'" r="'+f(cr*.6)+'"/>';if(z)b+=s;else o+=s;x+=cr*2+R(2,8)}
 function house(a,wd,h,rh,z){var e=Math.min(5,wd*.08),s='<path d="M'+f(a)+' '+G+'V'+f(G-h)+'H'+f(a-e)+'L'+f(a+wd/2)+' '+f(G-h-rh)+'L'+f(a+wd+e)+' '+f(G-h)+'H'+f(a+wd)+'V'+G+'Z"/>';if(z)b+=s;else o+=s}
