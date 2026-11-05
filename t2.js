@@ -266,7 +266,7 @@ if(kind==='townhomes'){var n=Math.floor(R(3,6)),uw=R(52,64),h=R(38,46);for(var i
 else if(kind==='houses'){var wd=R(70,110),h2=R(32,44),rh=wd*R(.4,.52);if(r()<.5)o+='<rect x="'+f(x+wd*.7)+'" y="'+f(G-h2-rh*.95)+'" width="9" height="'+f(rh*.7)+'"/>';house(x,wd,h2,rh);win(x+wd/2-6,G-h2-rh*.5,12,9);if(r()<.6)win(x+wd*.22,G-h2+10,10,12),win(x+wd*.78-10,G-h2+10,10,12);x+=wd}
 else{var aw=R(170,280),fl=Math.floor(R(3,5)),ah=fl*18+8;house(x,aw,ah,r()<.6?20:10);for(var c=x+14;c<x+aw-16;c+=24)for(var k=0;k<fl;k++)if(r()<.22)win(c,G-ah+8+k*18,10,10);x+=aw}
 x+=R(4,14)}
-return '<svg viewBox="0 0 '+X+' '+G+'" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false"><g fill="currentColor" opacity=".22">'+b+'</g><g fill="currentColor">'+o+'</g><g class="t2-sky-w">'+w+'</g></svg>'}
+return '<svg viewBox="0 0 '+X+' '+G+'" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false"><g fill="currentColor" opacity=".38">'+b+'</g><g fill="currentColor">'+o+'</g><g class="t2-sky-w">'+w+'</g></svg>'}
 function big(i){if(!i)return '';var ss=i.getAttribute('srcset'),b=i.getAttribute('src')||'',bw=0;if(ss)ss.split(',').forEach(function(c){var p=c.trim().split(/\s+/),n=parseInt(p[1],10);if(n>bw&&n<=2600){bw=n;b=p[0]}});return b}
 function run(){var L=W.T2L||{},S=W.T2S||{},T=W.T2||{},home=location.pathname==='/';if(D.getElementById('or3d'))return;
 var ph=L.photo||'auto',tg=null;if(home&&ph!=='none'){var fq=D.querySelector('.t2-sec.t2-faqs'),hd=D.querySelector('.t2-sec.t2-hood');if(ph==='faqs')tg=fq;else if(ph==='nearby')tg=hd;else if(ph==='cta')tg=D.querySelector('.t2-ctap-sec');else if(fq&&!dark(vis(fq.previousElementSibling,'previousElementSibling'))&&!dark(vis(fq.nextElementSibling,'nextElementSibling')))tg=fq;else tg=hd;
