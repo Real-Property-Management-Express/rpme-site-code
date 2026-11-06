@@ -909,3 +909,6 @@ html.t2-avfs :has(.t2-avail.is-fs){transform:none!important;filter:none!importan
 .t2-avail.is-fs{position:fixed!important;inset:0;left:0;width:auto;max-width:none;transform:none;z-index:2147483000;display:flex;flex-direction:column;border:0;border-radius:0;box-shadow:none;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
 .t2-avail.is-fs>:not(.t2-avb){flex:1;min-height:0}
 .t2-avail.is-fs iframe{height:100%!important}
+.t2-3d.t2-3d-soon{cursor:default;color:var(--t2-mut,#5d6876);border-color:rgba(var(--t2-acc-rgb),.45)}
+.t2-3d.t2-3d-soon:hover{background:#fff;border-color:rgba(var(--t2-acc-rgb),.45);transform:none;box-shadow:none}
+.t2-3d.t2-3d-soon svg{color:var(--t2-mut,#5d6876)}
