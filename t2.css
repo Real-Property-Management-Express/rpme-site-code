@@ -678,6 +678,7 @@ button.t2-fee-row:focus-visible{outline:2px solid var(--t2-navy);outline-offset:
 @media (hover:hover){.t2-tm-x:hover,.t2-pz-x:hover,.t2-pop-x:hover{background:var(--t2-navy);color:#fff;transform:rotate(90deg)}}
 .t2-tm-x:focus-visible,.t2-pz-x:focus-visible{outline:2px solid var(--t2-navy);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.t2-tm-x,.t2-pz-x{transition:none}.t2-tm-x:hover,.t2-pz-x:hover{transform:none}}
+.t2-mk.sel .t2-mk-pin{transform:rotate(-45deg) scale(1.12);background:var(--t2-navy-dk,#00284d)}
 @media (hover:hover){.t2-mk:hover .t2-mk-pin{transform:rotate(-45deg) scale(1.12);background:var(--t2-navy-dk,#00284d)}.t2-mk:hover .t2-mk-lbl{transform:translateY(-2px);box-shadow:var(--t2-sh12,0 16px 40px rgba(0,0,0,.12))}.t2-pmk:hover .t2-pmk-dot{transform:scale(1.45);background:var(--t2-navy)}.t2-pmk:hover .t2-pmk-l{opacity:1;transform:translate(0,-50%)}.t2-pmk:hover{z-index:3}}
 @media (prefers-reduced-motion:reduce){.t2-mk-pin,.t2-mk-lbl{transition:none}}
 .t2-phero-solo .t2-phero-in{grid-template-columns:minmax(0,1fr)}
