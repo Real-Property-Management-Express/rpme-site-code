@@ -913,4 +913,4 @@ html.t2-avfs :has(.t2-avail.is-fs){transform:none!important;filter:none!importan
 .t2-3d.t2-3d-soon{cursor:default;color:var(--t2-mut,#5d6876);border-color:rgba(var(--t2-acc-rgb),.45)}
 .t2-3d.t2-3d-soon:hover{background:#fff;border-color:rgba(var(--t2-acc-rgb),.45);transform:none;box-shadow:none}
 .t2-3d.t2-3d-soon svg{color:var(--t2-mut,#5d6876)}
-.t2-plan-btns>.t2-3d.t2-3d-soon{grid-column:1/-1}
+.t2-plan-btns>.t2-3d.t2-3d-soon{grid-column:1/-1;min-width:0;padding:8px 16px;white-space:normal;text-align:center;line-height:1.2}
