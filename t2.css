@@ -925,3 +925,5 @@ html.t2-avfs :has(.t2-avail.is-fs){transform:none!important;filter:none!importan
 .t2-self-c{margin:0 0 24px}
 .t2-pop .t2-self-c{display:none}
 @media (max-width:479px){.t2-pop-self .t2-btn{width:100%}}
+.t2-pop-card{max-height:calc(100vh - 48px);max-height:calc(100dvh - 48px);overscroll-behavior:contain}
+@media (max-width:767px){.t2-pop-card{max-height:86vh;max-height:calc(100dvh - 56px);padding-top:16px}.t2-pop-x{position:sticky;top:0;float:right;z-index:3;margin:0 -4px 6px 12px;box-shadow:0 2px 10px rgba(var(--t2-shd-rgb),.18)}.t2-pop-h{margin:8px 0 6px;font-size:28px}.t2-pop-sub{margin-bottom:16px}.t2-pop-self{gap:10px;margin-bottom:14px;padding:12px 14px}.t2-pop-self p{font-size:14px}.t2-pop-self b{font-size:16px}.t2-pop-or{margin-bottom:14px}.t2-pop textarea.form-field{height:84px!important;min-height:84px}}
