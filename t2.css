@@ -1220,3 +1220,15 @@ html[data-t2-site=district] .footer .rpme-logo{width:220px}
 .t2-bp-foot{margin:28px 24px 0}.t2-bp-web{width:100%;justify-content:center;box-sizing:border-box;background:#fff;border:1.5px solid var(--t2-navy);color:var(--t2-navy)}
 @media (max-width:600px){.t2-bp-hd,.t2-bp-act{padding-left:16px;padding-right:16px}.t2-bp-facts,.t2-bp-sp,.t2-bp-sec,.t2-bp-foot{margin-left:16px;margin-right:16px}.t2-bp-dl{grid-template-columns:1fr;gap:2px}.t2-bp-dl dd{margin-bottom:10px}}
 .t2-dtile-lk+.t2-dtile-map{right:22px}
+
+.t2-dtile-more{text-decoration:none;padding-bottom:3px;border-bottom:2px solid currentColor}
+.t2-bcard-ic.t2-bcard-web{width:auto;gap:8px;padding:0 16px;display:inline-flex;align-items:center;font:600 15px/1 var(--t2-sans);text-decoration:none}.t2-bcard-web svg{width:18px;height:18px}
+a.t2-dtick-i{text-decoration:none;cursor:pointer}.t2-dir-ticker .t2-dtick-track{pointer-events:auto}
+html[data-t2-site=district] .navbar{background:var(--t2-navy);border-bottom-color:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
+html[data-t2-site=district] .navbar::before{top:auto;bottom:0;height:5px;background:linear-gradient(90deg,var(--t2-c1),var(--t2-c2),var(--t2-c3),var(--t2-c4),var(--t2-c5),var(--t2-c6),var(--t2-c1));background-size:200% 100%;animation:t2navc 14s linear infinite}
+@keyframes t2navc{to{background-position:-200% 0}}@media (prefers-reduced-motion:reduce){html[data-t2-site=district] .navbar::before{animation:none}}
+html[data-t2-site=district] .navbar .button.nav-call-cta,html[data-t2-site=district] .navbar .menu-button{color:#fff}
+html[data-t2-site=district] .navbar .button.nav-call-cta:hover,html[data-t2-site=district] .navbar .menu-button:hover,html[data-t2-site=district] .navbar .menu-button.w--open{background:rgba(255,255,255,.12)!important}
+html[data-t2-site=district] .navbar .button.nav-tour-cta:hover{background:#fff;color:var(--t2-navy)}
+html[data-t2-site=district] .navbar .nav-menu{background:var(--t2-navy);border-top-color:rgba(255,255,255,.12)}
+html[data-t2-site=district] .navbar .nav-link,html[data-t2-site=district] .navbar .nav-link.w--current{color:#fff!important}html[data-t2-site=district] .navbar .nav-link:hover{background:rgba(255,255,255,.1);color:var(--t2-c1)!important}html[data-t2-site=district] .navbar .nav-link.w--current{text-decoration-color:var(--t2-c1)}
