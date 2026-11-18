@@ -323,14 +323,17 @@ IC={ph:'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16
 function ico(k){return SV+(IC[k]||IC.pin)+'</svg>';}
 function badge(b,c){var s=h('span',c||'t2-bcard-badge');if(b.icon){var i=h('img');i.src=b.icon;i.alt='';i.decoding='async';s.appendChild(i);}else s.appendChild(h('span','t2-badge-l',short(b).replace(/^the\s+/i,'').charAt(0)));return s;}
 function line(k,a){var li=h('li');a.insertAdjacentHTML('afterbegin',ico(k));li.appendChild(a);return li;}
+function facts(b){var f=[b.beds,b.baths,b.homes?b.homes+' homes':''].filter(Boolean);if(!f.length)return null;var u=h('ul','t2-bcard-facts');u.setAttribute('aria-label','Apartments');f.forEach(function(t){u.appendChild(h('li','',t));});return u;}
+function amen(b,n){var a=b.amen||[];if(!a.length)return null;var u=h('ul','t2-bcard-am');u.setAttribute('aria-label','Amenities');a.forEach(function(t,i){var li=h('li','',t);if(i>=n)li.hidden=true;u.appendChild(li);});if(a.length>n){var li=h('li','t2-bcard-more'),m=h('button','','+'+(a.length-n)+' more');m.type='button';m.setAttribute('aria-label','Show all '+a.length+' amenities');m.addEventListener('click',function(ev){ev.stopPropagation();[].forEach.call(u.querySelectorAll('li[hidden]'),function(x){x.hidden=false;});li.remove();});li.appendChild(m);u.appendChild(li);}return u;}
 function card(b,v){var c=paint(h('article','t2-bcard'),b.color);
 if(v!=='list'&&b.photo){var m=ext(h('a','t2-bcard-media'),b.url);m.setAttribute('aria-label','Visit the '+b.name+' website');var im=h('img');im.src=b.photo;im.alt=b.alt||b.name;im.loading='lazy';im.decoding='async';m.appendChild(im);c.appendChild(m);}
-var bd=h('div','t2-bcard-body');c.appendChild(bd);var hd=h('div','t2-bcard-top');hd.appendChild(badge(b));hd.appendChild(h('h3','t2-bcard-h',b.name));bd.appendChild(hd);
-var ct=h('ul','t2-bcard-ct');ct.appendChild(line('pin',ext(h('a','t2-bcard-addr',b.addr),dir(b))));
-if(b.phone){var a=h('a','',b.phone);a.href=tel(b.phone);ct.appendChild(line('ph',a));}
-if(b.email){var e=h('a','',b.email);e.href='mailto:'+b.email;ct.appendChild(line('ml',e));}
-if(b.blurb&&v!=='list')bd.appendChild(h('p','t2-bcard-d',b.blurb));bd.appendChild(ct);
-if(b.url){var go=ext(h('a','t2-btn t2-btn-pri t2-bcard-go','Visit website'),b.url);go.insertAdjacentHTML('beforeend','<span aria-hidden="true">↗</span>');go.setAttribute('aria-label','Visit the '+b.name+' website');bd.appendChild(go);}
+var bd=h('div','t2-bcard-body');c.appendChild(bd);var hd=h('div','t2-bcard-top');hd.appendChild(badge(b));var tt=h('div','t2-bcard-tt'),hh=h('h3','t2-bcard-h',short(b));tt.appendChild(hh);tt.appendChild(ext(h('a','t2-bcard-addr',String(b.addr).split(',')[0]),dir(b)));hd.appendChild(tt);bd.appendChild(hd);
+var f=facts(b);if(f)bd.appendChild(f);var am=amen(b,v==='list'?4:5);if(am)bd.appendChild(am);
+var ft=h('div','t2-bcard-foot');
+if(b.url){var go=ext(h('a','t2-btn t2-btn-pri t2-bcard-go','Visit website'),b.url);go.insertAdjacentHTML('beforeend','<span aria-hidden="true">↗</span>');go.setAttribute('aria-label','Visit the '+b.name+' website');ft.appendChild(go);}
+if(b.phone){var a=h('a','t2-bcard-ic');a.href=tel(b.phone);a.setAttribute('aria-label','Call '+b.name+' at '+b.phone);a.title=b.phone;a.innerHTML=ico('ph');ft.appendChild(a);}
+if(b.email){var e=h('a','t2-bcard-ic');e.href='mailto:'+b.email;e.setAttribute('aria-label','Email '+b.name+' at '+b.email);e.title=b.email;e.innerHTML=ico('ml');ft.appendChild(e);}
+if(ft.children.length)bd.appendChild(ft);
 return c;}
 function tile(b){var a=paint(ext(h('a','t2-dtile'),b.url),b.color);a.setAttribute('aria-label','Visit the '+b.name+' website');
 if(b.photo){var im=h('img','t2-dtile-img');im.src=b.photo;im.alt='';im.loading='lazy';im.decoding='async';a.appendChild(im);}

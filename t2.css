@@ -974,6 +974,25 @@ html.t2-avfs :has(.t2-avail.is-fs){transform:none!important;filter:none!importan
 
 .t2-bcard-ct a.t2-bcard-addr{font-weight:500;color:var(--t2-mut)}
 .t2-bcard-ct a:hover{text-decoration:underline}
+.t2-bcard-tt{display:flex;flex-direction:column;gap:6px;min-width:0}
+.t2-bcard a.t2-bcard-addr{font:500 16px/1.3 var(--t2-sans);color:inherit;opacity:.85;text-decoration:none}
+.t2-bcard a.t2-bcard-addr:hover{opacity:1;text-decoration:underline}
+.t2-bcard-facts{list-style:none;margin:0;padding:12px 0 0;display:flex;flex-wrap:wrap;row-gap:4px;border-top:2px solid currentColor;font:var(--t2-disp-w) 20px/1.1 var(--t2-disp);text-transform:uppercase;letter-spacing:.01em}
+.t2-bcard-facts li{display:flex;align-items:center}
+.t2-bcard-facts li+li::before{content:"";width:6px;height:6px;margin:0 10px;border-radius:50%;background:currentColor;opacity:.55}
+.t2-bcard-am{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.t2-bcard-am li{padding:6px 11px;border-radius:var(--t2-pill);background:rgba(var(--t2-shd-rgb),.1);font:600 14px/1.2 var(--t2-sans)}
+.t2-bcard.is-dk .t2-bcard-am li{background:rgba(255,255,255,.18)}
+.t2-bcard-am li.t2-bcard-more{padding:0;background:none}
+.t2-bcard-more button{min-height:30px;padding:6px 11px;border:2px dashed currentColor;border-radius:var(--t2-pill);background:none;color:inherit;font:700 14px/1 var(--t2-sans);cursor:pointer;opacity:.85}
+.t2-bcard-more button:hover{opacity:1;border-style:solid}
+.t2-bcard-foot{display:flex;align-items:stretch;gap:10px;margin-top:auto;padding-top:6px}
+.t2-bcard-foot .t2-bcard-go{flex:1;min-width:0}
+.t2-bcard-ic{display:grid;place-items:center;flex:none;width:52px;min-height:52px;border-radius:var(--t2-pill);background:var(--t2-navy);color:#fff;transition:transform .2s var(--t2-ease)}
+.t2-bcard.is-dk .t2-bcard-ic{background:#fff;color:var(--t2-navy)}
+.t2-bcard-ic:hover{transform:translateY(-2px)}
+.t2-bcard-ic svg{width:22px;height:22px}
+.t2-dir .t2-bcard .t2-bcard-h{font-size:clamp(28px,2.4vw,36px)}
 .t2-bcard-body>.t2-bcard-go{margin-top:auto;align-self:stretch}
 .t2-bcard-body>.t2-bcard-ct{margin-bottom:6px}
 .t2-dir-chips{display:flex;flex-wrap:wrap;gap:12px}
