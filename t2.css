@@ -1327,3 +1327,4 @@ html[data-t2-site=district] .t2-hero-media.t2-dir-mosaic{transform:none;justify-
 .t2-dmap-tray .t2-dmap-f::before{content:"Categories";flex-basis:100%;font:700 14px/1 var(--t2-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--t2-mut,#555);margin-bottom:2px}
 @media (min-width:901px){.t2-dmap-tray .t2-dmap-f::before{display:none}}
 @media (min-width:992px){html[data-t2-site=district] .t2-hero-in{column-gap:clamp(48px,6vw,104px)}html[data-t2-site=district] .t2-hero-media.t2-dir-mosaic{justify-self:end;max-width:560px}}
+.t2-hub .t2-bcard-foot .t2-bcard-go{flex:1 1 100%;min-height:50px}.t2-hub .t2-bcard-foot .t2-bcard-ic{flex:0 0 auto;min-height:46px}.t2-hub .t2-bcard-foot .t2-bcard-web{flex:1 1 auto;justify-content:center}
