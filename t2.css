@@ -1232,3 +1232,5 @@ html[data-t2-site=district] .navbar .button.nav-call-cta:hover,html[data-t2-site
 html[data-t2-site=district] .navbar .button.nav-tour-cta:hover{background:#fff;color:var(--t2-navy)}
 html[data-t2-site=district] .navbar .nav-menu{background:var(--t2-navy);border-top-color:rgba(255,255,255,.12)}
 html[data-t2-site=district] .navbar .nav-link,html[data-t2-site=district] .navbar .nav-link.w--current{color:#fff!important}html[data-t2-site=district] .navbar .nav-link:hover{background:rgba(255,255,255,.1);color:var(--t2-c1)!important}html[data-t2-site=district] .navbar .nav-link.w--current{text-decoration-color:var(--t2-c1)}
+@media (min-width:992px){.t2-dir-tiles{grid-template-columns:repeat(6,minmax(0,1fr))}.t2-dir-tiles>*{grid-column:span 2}.t2-dir-tiles>:nth-child(3n+1):nth-last-child(2),.t2-dir-tiles>:nth-child(3n+2):last-child{grid-column:span 3}}
+.t2-dir-mosaic{grid-template-columns:repeat(6,minmax(0,1fr))}.t2-dir-mosaic>*{grid-column:span 2}.t2-dir-mosaic>:nth-child(3n+1):nth-last-child(2),.t2-dir-mosaic>:nth-child(3n+2):last-child{grid-column:span 3;aspect-ratio:auto}
