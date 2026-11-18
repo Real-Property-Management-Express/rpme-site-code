@@ -1266,3 +1266,4 @@ html[data-t2-site=district] .t2-hero-media.t2-dir-mosaic{transform:none;justify-
 @media (max-width:900px){.t2-drpme-in{gap:24px}.t2-drpme-card{flex-direction:row;justify-content:center;gap:14px;padding:18px 20px}.t2-drpme-card img{width:auto;max-width:42%;max-height:72px}.t2-drpme-x{font-size:20px}.t2-drpme-facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0 20px}.t2-drpme-facts li{padding:12px 10px}.t2-drpme-facts b,.t2-drpme-facts strong{font-size:22px}.t2-drpme-facts span{font-size:14px}.t2-drpme .t2-btn{white-space:normal;text-align:center;width:100%;min-height:52px;line-height:1.25;padding:12px 18px}}
 .t2-hub-n{white-space:nowrap}
 @media (max-width:600px){.t2-hub-br{gap:8px}.t2-hub-sort{font-size:0;gap:0}.t2-hub-sort select{font-size:15px;padding:0 30px 0 12px;max-width:150px}.t2-hub-vt{padding:0 16px;flex:none}}
+@media (max-width:767px){.t2-dir-tiles .t2-dtile{min-height:0;padding-top:90px}}
