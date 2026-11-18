@@ -1125,7 +1125,7 @@ html[data-t2-site=district] .t2-drpme{background:#fff}
 .t2-drpme-facts li{padding:16px;border-radius:var(--t2-r3);background:var(--t2-paper);border-top:5px solid var(--t2-c2)}
 .t2-drpme-facts li:nth-child(2){border-color:var(--t2-c5)}
 .t2-drpme-facts li:nth-child(3){border-color:var(--t2-c3)}
-.t2-drpme-facts b{display:block;font:var(--t2-disp-w) 34px/1 var(--t2-disp);color:var(--t2-navy);text-transform:var(--t2-hcase,none)}
+.t2-drpme-facts b,.t2-drpme-facts strong{display:block;font:var(--t2-disp-w) 34px/1 var(--t2-disp);color:var(--t2-navy);text-transform:var(--t2-hcase,none)}
 .t2-drpme-facts span{display:block;margin-top:6px;font-size:15px;line-height:1.35;color:var(--t2-mut)}
 @media (max-width:900px){.t2-drpme-in{grid-template-columns:1fr}.t2-drpme-facts{grid-template-columns:1fr}}
 html[data-t2-site=district] .footer{border-top:0}
