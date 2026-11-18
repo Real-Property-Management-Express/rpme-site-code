@@ -1156,7 +1156,7 @@ html[data-t2-site=district] .footer{border-top:0}
 html[data-t2-site=district] .footer .rpme-block .text-block{font-size:16px;color:#fff}
 html[data-t2-site=district] .footer .rpme-logo{width:220px}
 .t2-dmap-sec{background:var(--t2-paper);font-family:var(--t2-sans)}
-.t2-dmap-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 40px;padding:clamp(104px,10vw,128px) var(--t2-pad) clamp(22px,3vw,34px);background:var(--t2-navy);color:#fff}
+.t2-dmap-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 40px;padding:clamp(104px,10vw,128px) var(--t2-pad) clamp(22px,3vw,34px);background:var(--t2-navy);color:#fff}
 .t2-dmap-head .t2-ph1{margin:0;color:#fff;font-size:clamp(48px,6vw,96px);line-height:.9}
 .t2-dmap-head .t2-ph1 .t2-pw:nth-child(odd){color:var(--t2-c1)}
 .t2-dmap-head .t2-lead{margin:0;max-width:52ch;color:rgba(255,255,255,.86)}
