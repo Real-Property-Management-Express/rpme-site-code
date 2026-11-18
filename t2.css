@@ -1234,3 +1234,4 @@ html[data-t2-site=district] .navbar .nav-menu{background:var(--t2-navy);border-t
 html[data-t2-site=district] .navbar .nav-link,html[data-t2-site=district] .navbar .nav-link.w--current{color:#fff!important}html[data-t2-site=district] .navbar .nav-link:hover{background:rgba(255,255,255,.1);color:var(--t2-c1)!important}html[data-t2-site=district] .navbar .nav-link.w--current{text-decoration-color:var(--t2-c1)}
 @media (min-width:992px){.t2-dir-tiles{grid-template-columns:repeat(6,minmax(0,1fr))}.t2-dir-tiles>*{grid-column:span 2}.t2-dir-tiles>:nth-child(3n+1):nth-last-child(2),.t2-dir-tiles>:nth-child(3n+2):last-child{grid-column:span 3}}
 .t2-dir-mosaic{grid-template-columns:repeat(6,minmax(0,1fr))}.t2-dir-mosaic>*{grid-column:span 2}.t2-dir-mosaic>:nth-child(3n+1):nth-last-child(2),.t2-dir-mosaic>:nth-child(3n+2):last-child{grid-column:span 3;aspect-ratio:2/1}
+.t2-dtile-more{align-self:flex-start}
