@@ -182,24 +182,24 @@ try{!function(){var T=window.T2||{},p=String(T.path||'/apartments').split('#')[0
 }catch(e){console.error(e);}
 try{(function(){var dom=String((W.T2&&W.T2.domain)||'').toLowerCase().replace(/^www\./,''),me=location.hostname.toLowerCase().replace(/^www\./,'');function ext(a){var h=a.getAttribute('href')||'';if(!/^(https?:)?\/\//i.test(h))return false;var host=(a.hostname||'').toLowerCase().replace(/^www\./,'');return !(host===me||(dom&&host===dom));}function set(a){if(!ext(a))return;a.target='_blank';var r=(a.getAttribute('rel')||'').split(/\s+/).filter(Boolean);['noopener','noreferrer'].forEach(function(x){if(r.indexOf(x)<0)r.push(x);});a.setAttribute('rel',r.join(' '));}[].forEach.call(D.querySelectorAll('a[href]'),set);D.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(a)set(a);},true);})();
 }catch(e){console.error(e);}
-try{(function(){var av=D.getElementById('availability'),fd=D.getElementById('or3d');if(D.getElementById('fees')||!av&&!fd)return;
+try{(function(){var S=W.T2FEES={rbp:20,rbpHigh:60,ltl:16,petRent:45,petFee:380,appFee:69,holding:500,docSetup:200,service:[[2,150],[4,250],[1e9,350]]};var av=D.getElementById('availability'),fd=D.getElementById('or3d');if(D.getElementById('fees')||!av&&!fd)return;
 var T=W.T2||{},F=T.fees||{},O='Optional',pop=!av;
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 var UT={'included':'The utility is paid by the property and included in your rent. No separate charge.','paid to provider':'You set up an account in your name and pay the utility company directly. No charge from us.','flat rate':'A fixed monthly charge for the utility that stays the same each month.','rubs':'Your share of the property\'s utility bill, divided among residents by a set formula. The amount can change month to month.','lifestyle fee':'One simple monthly fee that can include internet, water/sewer, trash, pest control and amenity access. What\'s included varies by property.'};
 var ut=F.utilities||'[Airtable]';
 var cards=[['Every month',[['rent','Rent',pop?'Shown for each apartment':'<a href="#availability">See availability</a>',''],
-['rbp','Resident Benefits Package','$20–$60','Bundles a package of resident services and benefits into one monthly charge. Based on credit tier: $20, $50 or $60 a month.'],
-['ltl','Liability to Landlord Insurance','$16','Required liability-only coverage with a $0 deductible that protects the property owner from accidental damage to your home, such as fire, flood or injury. It does not cover your belongings, so we recommend carrying your own renters insurance too.'],
+['rbp','Resident Benefits Package','$'+S.rbp+'–$'+S.rbpHigh,'Bundles a package of resident services and benefits into one monthly charge. Based on credit tier: $20, $50 or $60 a month.'],
+['ltl','Liability to Landlord Insurance','$'+S.ltl,'Required liability-only coverage with a $0 deductible that protects the property owner from accidental damage to your home, such as fire, flood or injury. It does not cover your belongings, so we recommend carrying your own renters insurance too.'],
 ['utilities','Utilities',ut,UT[String(ut).toLowerCase()]||''],
-['petRent','Pet rent','$45 per pet','Monthly charge for each authorized cat or dog. No pet rent is charged for other animal types.',O],
+['petRent','Pet rent','$'+S.petRent+' per pet','Monthly charge for each authorized cat or dog. No pet rent is charged for other animal types.',O],
 ['parking','Parking',null,'Reserved, covered, carport or underground parking, where available. Open surface parking is always free. Types and prices vary.',O],
 ['garage','Garage',null,'Attached, detached or off-site garages, where available. Prices vary by garage type.',O],
 ['storage','Storage',null,'Extra storage units, where available. Prices vary by unit size.',O]].concat((F.optional||[]).map(function(o){return [null,o.name,o.value,o.desc||'',O];}))],
 ['To apply and move in',[['appFee','Application fee','$69 per applicant','Covers processing your rental application, including background and credit checks. Non-refundable.'],
-['holding','Holding fee','$500','Holds your home once you\'re approved. After move-in, it transfers to your security deposit, which may be applied to amounts owed at move-out and is refunded per your lease terms. Approved residents may use a $500 Jetty deposit bond instead of paying cash.'],
-['docSetup','Documentation Setup Fee','$200','Covers preparing your lease documents and setting up your resident account.'],
-['service','Service fee','$150–$350','One-time, non-refundable fee based on the number of carpeted rooms in your home: up to 2 rooms $150, 3–4 rooms $250, 5 or more rooms $350.'],
-['petFee','Pet fee','$380 per home','One-time fee to move in with an authorized pet: $380 per home for cats and dogs. For other animals it is $190 per pet, up to $380 per home.',O]]]];
+['holding','Holding fee','$'+S.holding,'Holds your home once you\'re approved. After move-in, it transfers to your security deposit, which may be applied to amounts owed at move-out and is refunded per your lease terms. Approved residents may use a $500 Jetty deposit bond instead of paying cash.'],
+['docSetup','Documentation Setup Fee','$'+S.docSetup,'Covers preparing your lease documents and setting up your resident account.'],
+['service','Service fee','$'+S.service[0][1]+'–$'+S.service[2][1],'One-time, non-refundable fee based on the number of carpeted rooms in your home: up to 2 rooms $150, 3–4 rooms $250, 5 or more rooms $350.'],
+['petFee','Pet fee','$'+S.petFee+' per home','One-time fee to move in with an authorized pet: $380 per home for cats and dogs. For other animals it is $190 per pet, up to $380 per home.',O]]]];
 function grid(){var n=0,h='<div class="t2-fees-grid">';
 cards.forEach(function(c){var rows='';c[1].forEach(function(r){var k=r[0],val=k&&F[k]!=null?F[k]:r[2];if(val===false||val==null)return;
 var nm=k&&F[k+'Name']||r[1],d=k&&F[k+'Desc']!=null?F[k+'Desc']:r[3],id='t2fee'+(n++),tag=r[4]?' <span class="t2-fee-tag">'+r[4]+'</span>':'';
