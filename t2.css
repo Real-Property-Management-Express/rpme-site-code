@@ -218,7 +218,7 @@ html.t2-js .t2-gal-4.is-in{transition-delay:.3s}
 .form-contact-link-block .small-decorative-icon{position:relative;z-index:1;grid-column:1;grid-row:1/span 2;justify-self:center;width:20px;height:20px;margin:0;filter:brightness(0) invert(1);opacity:.92}
 .form-contact-link-block .caps{margin:0 0 3px;font:600 12px/1.2 var(--t2-sans);letter-spacing:.08em;text-transform:uppercase;color:var(--t2-acc-lt)}
 .form-contact-link-block .label{margin:0;font:500 17px/1.4 var(--t2-sans);color:#fff;text-decoration:none;overflow-wrap:anywhere}
-a.form-contact-link-block .label::after{content:"\2192";display:inline-block;margin-left:8px;opacity:0;transform:translateX(-6px);transition:opacity .25s,transform .25s var(--t2-ease)}
+a.form-contact-link-block{padding-right:28px}a.form-contact-link-block .label::after{content:"\2192";position:absolute;right:0;top:50%;margin-top:-.7em;opacity:0;transform:translateX(-6px);transition:opacity .25s,transform .25s var(--t2-ease)}
 a.form-contact-link-block:hover::before,a.form-contact-link-block:focus-visible::before{background:var(--t2-acc);box-shadow:none}
 a.form-contact-link-block:hover .label::after,a.form-contact-link-block:focus-visible .label::after{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.form-contact-link-block::before,a.form-contact-link-block .label::after{transition:none}}
