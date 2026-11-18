@@ -983,9 +983,6 @@ html.t2-avfs :has(.t2-avail.is-fs){transform:none!important;filter:none!importan
 .t2-bcard-am{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
 .t2-bcard-am li{padding:6px 11px;border-radius:var(--t2-pill);background:rgba(var(--t2-shd-rgb),.1);font:600 14px/1.2 var(--t2-sans)}
 .t2-bcard.is-dk .t2-bcard-am li{background:rgba(255,255,255,.18)}
-.t2-bcard-am li.t2-bcard-more{padding:0;background:none}
-.t2-bcard-more button{min-height:30px;padding:6px 11px;border:2px dashed currentColor;border-radius:var(--t2-pill);background:none;color:inherit;font:700 14px/1 var(--t2-sans);cursor:pointer;opacity:.85}
-.t2-bcard-more button:hover{opacity:1;border-style:solid}
 .t2-bcard-foot{display:flex;align-items:stretch;gap:10px;margin-top:auto;padding-top:6px}
 .t2-bcard-foot .t2-bcard-go{flex:1;min-width:0}
 .t2-bcard-ic{display:grid;place-items:center;flex:none;width:52px;min-height:52px;border-radius:var(--t2-pill);background:var(--t2-navy);color:#fff;transition:transform .2s var(--t2-ease)}
@@ -1163,3 +1160,4 @@ html[data-t2-site=district] .footer .rpme-logo{width:220px}
 .t2-dmap-head .t2-ph1{margin:0;color:#fff;font-size:clamp(48px,6vw,96px);line-height:.9}
 .t2-dmap-head .t2-ph1 .t2-pw:nth-child(odd){color:var(--t2-c1)}
 .t2-dmap-head .t2-lead{margin:0;max-width:52ch;color:rgba(255,255,255,.86)}
+.t2-co{display:flex;align-items:center;gap:10px;margin:0 auto 0 18px;padding-left:18px;border-left:2px solid var(--t2-line);color:var(--t2-mut);text-decoration:none;flex:none}.t2-co-by{font:600 15px/1 var(--t2-sans)}.t2-co img{display:block;height:44px;width:auto}.t2-co:hover img{opacity:.85}@media (max-width:767px){.t2-co{margin-left:12px;padding-left:12px;gap:8px}.t2-co img{height:34px}}@media (max-width:479px){.t2-co-by{display:none}.t2-co img{height:28px}}
