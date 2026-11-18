@@ -983,8 +983,8 @@ html.t2-avfs :has(.t2-avail.is-fs){transform:none!important;filter:none!importan
 .t2-bcard-am{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
 .t2-bcard-am li{padding:6px 11px;border-radius:var(--t2-pill);background:rgba(var(--t2-shd-rgb),.1);font:600 14px/1.2 var(--t2-sans)}
 .t2-bcard.is-dk .t2-bcard-am li{background:rgba(255,255,255,.18)}
-.t2-bcard-foot{display:flex;align-items:stretch;gap:10px;margin-top:auto;padding-top:6px}
-.t2-bcard-foot .t2-bcard-go{flex:1;min-width:0}
+.t2-bcard-foot{display:flex;flex-wrap:wrap;align-items:stretch;gap:10px;margin-top:auto;padding-top:6px}
+.t2-bcard-foot .t2-bcard-go{flex:1 1 170px;min-width:0;white-space:nowrap}
 .t2-bcard-ic{display:grid;place-items:center;flex:none;width:52px;min-height:52px;border-radius:var(--t2-pill);background:var(--t2-navy);color:#fff;transition:transform .2s var(--t2-ease)}
 .t2-bcard.is-dk .t2-bcard-ic{background:#fff;color:var(--t2-navy)}
 .t2-bcard-ic:hover{transform:translateY(-2px)}
