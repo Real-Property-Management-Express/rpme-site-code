@@ -343,6 +343,7 @@ var MP=(W.T2&&W.T2.mapPath)||(D.querySelector('a[href="/neighborhood"]')?'/neigh
 function slug(b){return short(b).toLowerCase().replace(/^the\s+/,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
 function murl(b){return MP+'?b='+slug(b);}
 function durl(b){return b.page||(DP?DP+'?b='+slug(b):'');}
+if(W.T2&&W.T2.bpage!=null)B.forEach(function(b){if(!b.page)b.page=W.T2.bpage+slug(b);});
 var DP=(W.T2&&W.T2.dirPath)||(D.querySelector('a[href="/properties"]')&&location.pathname.replace(/\/$/,'')!=='/properties'?'/properties':'');
 function tile(b){var a=paint(h('div','t2-dtile'),b.color),sl=slug(b),lk=durl(b)?h('a','t2-dtile-lk'):ext(h('a','t2-dtile-lk'),b.url);if(durl(b)){lk.href=durl(b);lk.setAttribute('data-t2-keep','');lk.setAttribute('aria-label','See details for '+b.name);}else lk.setAttribute('aria-label','Visit the '+b.name+' website');
 if(b.photo){var im=h('img','t2-dtile-img');im.src=b.photo;im.alt='';im.loading='lazy';im.decoding='async';a.appendChild(im);}
