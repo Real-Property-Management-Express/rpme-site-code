@@ -1414,3 +1414,4 @@ html[data-t2-site=district] .t2-nav-x,html[data-t2-site=district] .t2-nav-sl{col
 @keyframes t2stag{0%,82%,100%{transform:rotate(4deg)}88%{transform:rotate(-2deg)}94%{transform:rotate(6deg)}}
 @media (prefers-reduced-motion:reduce){.t2-stag{animation:none}}
 .t2-dir-mosaic .t2-stag{top:8px;right:8px;padding:6px 10px 6px 20px}.t2-dir-mosaic .t2-stag b{font-size:14px}.t2-dir-mosaic .t2-stag small{display:none}
+.t2-bp-loc{display:grid;gap:12px}.t2-bp-lmap{display:block;overflow:hidden;border-radius:var(--t2-r3);border:1px solid var(--t2-line);aspect-ratio:900/420;background:var(--t2-paper)}.t2-bp-lmap img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s var(--t2-ease)}a.t2-bp-lmap:hover img{transform:scale(1.03)}.t2-bp-lact{display:flex;flex-wrap:wrap;gap:8px 24px}.t2-bp-lact .t2-bp-more{margin-top:0}
