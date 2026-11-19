@@ -512,6 +512,7 @@ if(v==='page'){bpage(el);return;}
 if(v==='quiz'){quiz(el);return;}
 B.forEach(function(b){el.appendChild(card(b,v));});});
 var HS=decodeURIComponent(location.hash.slice(1)),HC=HS&&D.getElementById(HS);if(HC&&HC.classList.contains('t2-bcard'))setTimeout(function(){HC.scrollIntoView({block:'center',behavior:'smooth'});HC.classList.add('is-hl');setTimeout(function(){HC.classList.remove('is-hl');},2600);},350);
+if(D.documentElement.getAttribute('data-t2-site')==='district')[].forEach.call(D.querySelectorAll('.t2-eyebrow span'),function(e){if(/\[Property Name\]/.test(e.textContent))e.textContent='Live Downtown Fargo';});
 if(D.documentElement.getAttribute('data-t2-site')==='district')[].forEach.call(D.querySelectorAll('.t2-hero .t2-h1,[data-t2-paint]'),function(e){if(e.t2p||e.children.length)return;e.t2p=1;var w=e.textContent.trim().split(/\s+/);e.textContent='';w.forEach(function(x,i){if(i)e.appendChild(D.createTextNode(' '));e.appendChild(h('span','t2-pw t2-pw'+(i%6+1),x));});});
 function hook(map,box){if(box.t2b||box.closest('.t2-dmap'))return;box.t2b=1;box.classList.add('t2-mbx-multi');var bd=new mapboxgl.LngLatBounds(),pop=h('div','t2-poi-card t2-bpop');pop.hidden=true;box.appendChild(pop);
 function close(){pop.hidden=true;[].forEach.call(box.querySelectorAll('.t2-bpin.sel'),function(x){x.classList.remove('sel');});}
