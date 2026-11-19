@@ -1340,7 +1340,7 @@ html[data-t2-site=district] .t2-hero-media.t2-dir-mosaic{transform:none;justify-
 @media (min-width:992px){html[data-t2-site=district] .t2-hero-in{column-gap:clamp(48px,6vw,104px)}html[data-t2-site=district] .t2-hero-media.t2-dir-mosaic{justify-self:end;max-width:560px}}
 .t2-hub .t2-bcard-foot .t2-bcard-go{flex:1 1 100%;min-height:50px}.t2-hub .t2-bcard-foot .t2-bcard-ic{flex:0 0 auto;min-height:46px}.t2-hub .t2-bcard-foot .t2-bcard-web{flex:1 1 auto;justify-content:center}
 
-@media (min-width:992px){.t2-hub-bar{top:calc(var(--t2-navh,72px) + 14px)}.t2-hub-bar::before{content:"";position:absolute;z-index:-1;left:-24px;right:-24px;top:-15px;height:calc(15px + var(--t2-r3,16px));background:var(--t2-page,#fff)}.t2-hub-side{top:calc(var(--t2-navh,72px) + 30px + var(--t2-hb,0px));height:calc(100svh - var(--t2-navh,72px) - var(--t2-hb,0px) - 52px)}}
+@media (min-width:992px){.t2-hub-bar{top:calc(var(--t2-navh,72px) + 14px)}.t2-hub-bar::before{content:"";position:absolute;z-index:-1;left:-24px;right:-24px;top:-16px;height:16px;background:var(--t2-page,#fff)}.t2-hub-side{top:calc(var(--t2-navh,72px) + 30px + var(--t2-hb,0px));height:calc(100svh - var(--t2-navh,72px) - var(--t2-hb,0px) - 52px)}}
 
 .t2-bpg-main .t2-bp-sec+.t2-bp-sec{margin-top:32px;padding-top:32px}
 .t2-bp-chips.is-ic li{display:inline-flex;align-items:center;gap:8px}.t2-bp-ci{display:grid;place-items:center;flex:none;width:22px;height:22px;color:var(--t2-navy)}.t2-bp-ci svg{width:18px;height:18px}
@@ -1390,3 +1390,14 @@ html[data-t2-site=district] .t2-hero-media.t2-dir-mosaic{transform:none;justify-
 @media (min-width:601px){.t2-hub .t2-bcard-body{padding:20px 22px 20px 28px;justify-content:center}.t2-hub .t2-bcard-foot{flex-wrap:nowrap;align-items:center}.t2-hub .t2-bcard-foot .t2-bcard-go{flex:1 1 auto;min-height:48px}.t2-hub .t2-bcard-foot .t2-bcard-ic{flex:none;width:48px;min-height:48px}}
 @media (max-width:600px){.t2-dir .t2-hub .t2-bcard::after{color:var(--t2-navy)}.t2-hub .t2-bcard-body{padding-left:18px}}
 .t2-quiz-va,.t2-bpg-all,.t2-bp-more,.t2-bpg-web,.t2-quiz-bk{text-decoration-line:underline;text-decoration-thickness:2px;text-underline-offset:4px;transition:color .2s,text-underline-offset .2s var(--t2-ease),text-decoration-color .2s}.t2-quiz-va:hover,.t2-bpg-all:hover,.t2-bp-more:hover,.t2-bpg-web:hover,.t2-quiz-bk:hover{color:var(--t2-c2,var(--t2-navy));text-underline-offset:7px;text-decoration-color:var(--t2-acc)}
+
+.t2-hub-bar{display:block}.t2-hub .t2-hub-br{display:flex;align-items:center;justify-content:space-between;gap:12px 16px;flex-wrap:wrap;margin:0;padding:14px 0;border:0}
+.t2-hub-bl{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.t2-hub-ft{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border:2px solid var(--t2-navy);border-radius:var(--t2-pill);background:#fff;color:var(--t2-navy);font:700 16px/1 var(--t2-sans);cursor:pointer;transition:background .2s,color .2s,transform .2s var(--t2-ease)}
+.t2-hub-ft:hover,.t2-hub-ft[aria-expanded=true]{background:var(--t2-navy);color:#fff}.t2-hub-ft:hover{transform:translateY(-2px)}.t2-hub-ft:focus-visible{outline:3px solid var(--t2-acc);outline-offset:2px}
+.t2-hub-fti{width:18px;height:18px}.t2-hub-fn{display:grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:99px;background:var(--t2-acc);color:var(--t2-navy);font:700 14px/1 var(--t2-sans)}
+.t2-hub .t2-hub-f{display:flex;flex-direction:column;flex-wrap:nowrap;gap:18px;max-height:calc(100svh - var(--t2-navh,72px) - 150px);overflow:auto;overscroll-behavior:contain;padding:18px 2px 0;border-top:1px solid var(--t2-line)}
+.t2-hub .t2-hub-f[hidden]{display:none}.t2-hub .t2-hub-g{width:100%}.t2-hub .t2-hub-chips{flex-wrap:wrap;overflow:visible;margin-right:0;padding-right:0}
+.t2-hub-c.is-ic{display:inline-flex;align-items:center;gap:8px}.t2-hub-c[aria-pressed=true] .t2-bp-ci{color:var(--t2-acc)}
+.t2-hub-fd{position:sticky;bottom:0;display:flex;justify-content:flex-end;padding:12px 0 16px;background:linear-gradient(transparent,#fff 30%)}
+.t2-bpin,.t2-ppin{transition:translate .2s var(--t2-ease),scale .2s var(--t2-ease),box-shadow .2s}.t2-bpin:hover,.t2-bpin.sel,.t2-bpin:focus-visible{translate:0 -3px;scale:1.06;z-index:4}.t2-ppin:hover,.t2-ppin.sel,.t2-ppin:focus-visible{scale:1.18;z-index:4}
