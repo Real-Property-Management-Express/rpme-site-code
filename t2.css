@@ -1430,3 +1430,4 @@ html[data-t2-site=district] .t2-nav-x,html[data-t2-site=district] .t2-nav-sl{col
 .t2-bpg-bar{display:none}
 @media (max-width:991px){.t2-bp-pics .t2-galm{column-count:2}.t2-bpg-bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--t2-line);box-shadow:0 -6px 20px rgba(0,0,0,.12);transform:translateY(110%);transition:transform .25s var(--t2-ease)}.t2-bpg-bar.on{transform:none}.t2-bpg-bar-act{display:flex;gap:8px;align-items:stretch}.t2-bpg-bar-act .t2-bp-go{flex:1;min-height:48px;margin:0;padding:0 16px}.t2-bpg-bar-act .t2-bcard-ic{width:48px;min-height:48px;flex:none;background:var(--t2-navy);color:#fff}}
 @media (max-width:991px){body:has(.t2-bpg-bar){padding-bottom:72px}}
+.w-nav-menu a.nav-link:not(.w-nav-link){display:inline-block;text-decoration:none}[data-nav-menu-open] a.nav-link:not(.w-nav-link){display:block;position:relative}
