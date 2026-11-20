@@ -201,6 +201,7 @@ var cards=[['Every month',[['rent','Rent',pop?'Shown for each apartment':'<a hre
 ['storage','Storage',null,'Extra storage units, where available. Prices vary by unit size.',O]].concat((F.optional||[]).map(function(o){return [null,o.name,o.value,o.desc||'',O];}))],
 ['To apply and move in',[['appFee','Application fee','$69 per applicant','Covers processing your rental application, including background and credit checks. Non-refundable.'],
 ['holding','Holding fee','$'+S.holding,'Holds your home once you\'re approved. After move-in, it transfers to your security deposit, which may be applied to amounts owed at move-out and is refunded per your lease terms. Approved residents may use a $500 Jetty deposit bond instead of paying cash.'],
+['jetty','Jetty deposit bond','Determined by Jetty','Instead of paying the $500 holding fee in cash, you can use a Jetty deposit bond. Jetty sets the cost of the bond, and a fee may apply.',O],
 ['docSetup','Documentation Setup Fee','$'+S.docSetup,'Covers preparing your lease documents and setting up your resident account.'],
 ['service','Service fee','$'+S.service[0][1]+'–$'+S.service[2][1],'One-time, non-refundable fee based on the number of carpeted rooms in your home: up to 2 rooms $150, 3–4 rooms $250, 5 or more rooms $350.'],
 ['petFee','Pet fee','$'+S.petFee+' per home','One-time fee to move in with an authorized pet: $380 per home for cats and dogs. For other animals it is $190 per pet, up to $380 per home.',O]]]];
